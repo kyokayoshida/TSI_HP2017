@@ -1,8 +1,8 @@
 @media screen and (min-width: 769px){
-    .product { margin-top: 140px; }    
+    .product { margin-top: 175px; }    
 }
 @media screen and (max-width: 768px){
-    .product { margin-top: 90px; }    
+    .product { margin-top: 125px; }    
 }
 
 .product {
