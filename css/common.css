@@ -764,8 +764,15 @@ Image credits: unsplash.com
     position: relative;
     height: auto;
     width:100%;
-    margin-top:104px;
 }
+
+@media screen and (min-width: 769px){
+    .fade-carousel { margin-top:104px; }    
+}
+@media screen and (max-width: 768px){
+    .fade-carousel{ margin-top: 54px; }    
+}
+
 .fade-carousel .carousel-inner .item {
     height: auto;
 	width:100%;
