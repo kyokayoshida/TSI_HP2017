@@ -1,0 +1,165 @@
+.rinen {
+	margin-top:140px;
+}
+
+.rinen h1 {
+	font-weight: 200;
+    letter-spacing: 0.2em;
+	text-align:center;
+	font-family: "Shuei Mincho M","EB Garamond","游明朝",YuMincho,"Hiragino Mincho ProN","HG明朝E","ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+	margin-top:20px;
+}
+
+.rinen p {
+	margin:20px 0px 50px 0px;
+	text-align:center;
+	font-weight: 500;
+    letter-spacing: 0.4em;
+	font-size:small;
+}
+
+.rinen table {
+margin-top:30px;
+	font-weight: 500;
+    letter-spacing: 0.4em;
+	font-size:small;
+}
+
+.policy {
+	width:80%;
+	margin:0 auto;
+}
+
+.policy p{
+	text-align:left;
+}
+
+
+td.active {
+	width:20%;
+	text-align:center;
+}
+.rinen img {
+	margin-bottom:10px;
+}
+
+.map h1 {
+	font-weight: 200;
+    letter-spacing: 0.2em;
+	text-align:center;
+	font-family: "Shuei Mincho M","EB Garamond","游明朝",YuMincho,"Hiragino Mincho ProN","HG明朝E","ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+	margin-top:20px;
+}
+
+.map p {
+	text-align:center;
+	font-weight: 500;
+    letter-spacing: 0.4em;
+}
+
+.Message {
+	text-align:left;
+	font-weight: 500;
+    letter-spacing: 0.2em;
+	font-size:small;
+	line-height:1.4em;
+}
+
+
+
+.Message h1{
+	font-weight: 200;
+    letter-spacing: 0.2em;
+	text-align:center;
+	font-family: "Shuei Mincho M","EB Garamond","游明朝",YuMincho,"Hiragino Mincho ProN","HG明朝E","ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+	margin:20px auto;
+}
+.Message img {
+	margin-bottom:20px;
+	text-align:center;
+}
+
+
+table.brwsr2 {
+    margin: 0 auto;
+    border: none;
+    border-top: solid 1px #666;
+    border-bottom: solid 1px #666;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    background: #f5f5f5;
+	width:100%;
+}
+ 
+table.brwsr2 th {
+    vertical-align: middle;
+    border-right: solid 1px #666;
+    margin: 0;
+    text-align: center;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+	border-left: solid 1px #666;
+	width:10%;
+}
+ 
+table.brwsr2 td.data {
+    padding: 0;
+    margin: 0;
+    border: none;
+    color: #333;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    overflow: hidden;
+	width:40%;
+}
+ 
+table.brwsr2 td:fst-child {
+    padding: 0 0 0 10px;
+    vertical-align: middle;
+}
+ 
+table.brwsr2 td.bar {
+    height: 1px;
+    width: 100%;
+    border-top: solid 1px #34495e;
+}
+
+table.brwsr1 {
+    margin: 0 auto;
+    border: none;
+    border-top: solid 1px #666;
+    border-bottom: solid 1px #666;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    background: #f5f5f5;
+	width:100%;
+}
+ 
+table.brwsr1 td {
+    vertical-align: middle;
+    margin: 0;
+    text-align: center;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+	width:40%;
+}
+
+table.brwsr1 th {
+    vertical-align: middle;
+    margin: 0;
+    text-align: center;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+	width:10%;
+}
+ 
+.sign p {
+	text-align:right;
+	padding-right:30px;
+}

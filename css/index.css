@@ -1,0 +1,182 @@
+.carousel-caption {
+	right: 20%;
+    left: 20%;
+    padding-bottom: 60px;
+}
+
+/*
+.jumbotron {
+	background-image:url(../img/com_info.png);
+	-webkit-filter: blur(1px) brightness(0.7) saturate(1);
+	height:300px;
+	overflow: hidden;/*ブラー効果でボヤけた部分を非表示*/
+/*
+
+.jumbotron:hover {
+	background-image:url(../img/com_info.png)
+	height:300px;
+}
+
+.jumbotron p{
+	text-align:center;
+	margin-bottom:100px;
+}
+
+.jumbotron p span{
+	font-size:15px;
+	color:#FFFFFF;
+}
+
+*/
+
+
+
+/*背景画像の設定をする*/
+.jumbotron{
+  background: radial-gradient(transparent, rgba(0,0,0,.1)) fixed, url(../img/com_info.png);
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  background-size: cover;
+  position: relative;
+  height:350px;
+  z-index: 0;
+  overflow: hidden;/*ブラー効果でボヤけた部分を非表示*/
+  font-size:0.8em;
+  letter-spacing:0.3em;
+}
+
+/*:beforeにぼかし効果を設定する*/
+.jumbotron:before{
+  content: '';
+  background: inherit;/*.bgImageで設定した背景画像を継承する*/
+  -webkit-filter: blur(0px) brightness(0.5) saturate(1);
+  position: absolute;
+  /*ブラー効果で画像の端がボヤけた分だけ位置を調整*/
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;/*重なり順序を一番下にしておく*/
+}
+
+.jumbotron p{
+  text-align: center;
+  font-size: 15px;
+  margin-top:50px;
+  margin-bottom:100px;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0,0,0,.4);
+}
+
+.product {
+text-align:center;
+	margin:50px auto;
+}
+.product h3{
+	text-align:center;
+	font-weight: 200;
+    letter-spacing: 0.2em;
+}
+.product span{
+	font-size:12px;
+}
+
+.product p{
+	text-align:center;
+    letter-spacing: 0.3em;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+  position: relative;
+  opacity: 0.8;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.bgimg-2 {
+background-image:url(../img/seishu_info.png);
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url(../img/wine_info.png);
+  min-height: 400px;
+}
+
+.bgimg-4 {
+  background-image:url(../img/beer_info.png);
+  min-height: 400px;
+}
+
+.bgimg-5 {
+  background-image:url(../img/ec_info.png);
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  line-height: 50px;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+
+.p_b {
+	margin-top:50px;
+}
+
+/* ガタ― */
+.o-3column .col-md-4 {
+	padding: 10px;
+	margin:20px 0px;
+}
+
+.box h3 {
+	font-weight: 200;
+    letter-spacing: 0.3em;
+	text-align:center;
+}
+
+.box p {
+	text-align:left;
+    letter-spacing: 0.3em;
+	margin:15px;
+}
+
+.info {
+    background: url(../img/tel.png) center;
+    background-size: cover;
+    padding: 50px;
+}
+
+.form_box h1 {
+	font-weight: 200;
+    letter-spacing: 0.2em;
+	text-align:center;
+	font-family: "Shuei Mincho M","EB Garamond","游明朝",YuMincho,"Hiragino Mincho ProN","HG明朝E","ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+	margin-top:20px;
+}
+
+.greeting {
+	margin:20px auto;
+}
+
+.greeting h1 {
+	font-weight: 200;
+    letter-spacing: 0.2em;
+	text-align:center;
+	margin-top:20px;
+}

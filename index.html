@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap Sample</title>
+<!-- BootstrapのCSS読み込み -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/common.css" rel="stylesheet">
+<link href="css/index.css" rel="stylesheet">
+<!-- jQuery読み込み -->
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
+<script src="js/jquery.dimensions.js"></script>
+<script src="js/wow.js"></script>
+<script>
+new WOW().init();
+</script>
+<!-- BootstrapのJS読み込み -->
+<script src="js/bootstrap.min.js"></script>
+<!--　nav2 -->
+<script type="text/javascript">
+    var name = "#floatMenu";
+    var menuYloc = null;
+     
+        $(document).ready(function(){
+            menuYloc = parseInt($(name).css("top").substring(0,$(name).css("top").indexOf("px")))
+            $(window).scroll(function () { 
+                offset = menuYloc+$(window).scrollTop()+"px";
+                $(name).animate({top:offset},{duration:900,queue:false});
+            });
+        }); 
+</script>
+</head>
+<body>
+<header>
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+<img src="img/logo.png" class="m_r">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#gnavi"> <span class="sr-only">メニュー</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+<div id="gnavi" class="collapse navbar-collapse">
+<ul class="gnav list-inline pc-only">
+  <li class="current"><a href="index.html" data-hover="HOME">HOME</a></li>
+  <li><a href="company.html" data-hover="会社案内">会社案内</a></li>
+  <li><a href="product.html" data-hover="製品案内">製品案内</a></li>
+  <li><a href="performance.html" data-hover="導入実績">導入実績</a></li>
+  <li><a href="partner.html" data-hover="パートナー">パートナー</a></li>
+  <li><a href="recruit.html" data-hover="採用情報">採用情報</a></li>
+  <li><a href="contact.html" data-hover="お問い合わせ">お問い合わせ</a></li>
+</ul>
+<ul class="gnav sp-only">
+  <p><a href="index.html" data-hover="HOME">HOME</a></p>
+  <p><a href="company.html" data-hover="会社案内">会社案内</a></p>
+  <p><a href="product.html" data-hover="製品案内">製品案内</a></p>
+  <p><a href="performance.html" data-hover="導入実績">導入実績</a></p>
+  <p><a href="partner.html" data-hover="パートナー">パートナー</a></p>
+  <p><a href="recruit.html" data-hover="採用情報">採用情報</a></p>
+  <p><a href="contact.html" data-hover="お問い合わせ">お問い合わせ</a></p>
+</ul>
+</nav>
+</header>
+<div class="container">
+  <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+    <!-- Overlay -->
+    <div class="overlay"></div>
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#bs-carousel" data-slide-to="1"></li>
+      <li data-target="#bs-carousel" data-slide-to="2"></li>
+      <li data-target="#bs-carousel" data-slide-to="3"></li>
+      <li data-target="#bs-carousel" data-slide-to="4"></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item slides active">
+        <div class="slide-1"></div>
+        <div class="hero">
+          <hgroup>
+            <p>地域の伝統文化をITの力で活性化</p>
+          </hgroup>
+          <!--      
+        <button class="btn btn-hero btn-lg" role="button">詳細</button>
+		-->
+        </div>
+      </div>
+      <div class="item slides">
+        <div class="slide-2"></div>
+        <div class="hero">
+          <hgroup>
+            <p>日々変化する経営環境に柔軟に対応</p>
+          </hgroup>
+          <!--      
+        <button class="btn btn-hero btn-lg" role="button">詳細</button>
+		-->
+        </div>
+      </div>
+      <div class="item slides">
+        <div class="slide-3"></div>
+        <div class="hero">
+          <hgroup>
+            <p>情報セキュリティの維持・向上</p>
+          </hgroup>
+          <!--      
+        <button class="btn btn-hero btn-lg" role="button">詳細</button>
+		-->
+        </div>
+      </div>
+      <div class="item slides">
+        <div class="slide-4"></div>
+        <div class="hero">
+          <hgroup>
+            <p>時代に即した企業文化を創出</p>
+          </hgroup>
+          <!--      
+        <button class="btn btn-hero btn-lg" role="button">詳細</button>
+		-->
+        </div>
+      </div>
+      <div class="item slides">
+        <div class="slide-5"></div>
+        <div class="hero">
+          <hgroup>
+            <p>ソリューションはこんな所にも</p>
+          </hgroup>
+          <!--      
+        <button class="btn btn-hero btn-lg" role="button">詳細</button>
+		-->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ご挨拶　-->
+  <div class="greeting row row-50">
+    <div class="col-xs-12">
+      <h1 class="text-center">ITで伝統の技に貢献する</h1>
+      <p class="text-center">TSIは、“酒造り”という日本人が誇るべき伝統文化をITの視点から研究してきました。<br>
+        昨今の厳しい時代背景の下では、いかに業界のニーズを満たしているか？<br>
+        また、システム投資効果がはっきり見えるか？そして、安心できる安全なシステムか？が求められています。<br>
+        <br>
+        充実したシステム製品群は、さらに高品質なレベルアップを繰り返しながら、<br>
+        標準化パッケージの提供を行っていきます。 </p>
+    </div>
+  </div>
+  <!-- 新着情報 -->
+  <div class="news">
+    <div class="tab-pane fade active in" id="news_tab">
+      <h3>新着情報</h3>
+      <table class="table table-hover">
+        <tr>
+          <td class="date">2017年5月17日</td>
+          <td class="news_text"><span class="label label-info">お知らせ</span>「地ビール管理システム」がIT導入補助金対象のITツールとして認定されました。</td>
+        </tr>
+        <tr>
+          <td class="date">2017年2月1日</td>
+          <td class="news_text"><span class="label label-info">お知らせ</span>【経済産業省IT導入補助金】IT導入支援事業者採択のお知らせ </td>
+        </tr>
+        <tr>
+          <td class="date">2017年1月21日</td>
+          <td class="news_text"><span class="label label-info">お知らせ</span>製販一体型「酒仙i 地ビール管理システム」をリリースしました。</td>
+        </tr>
+      </table>
+      <a class="btn btn-black btn-lg" href="news.html" role="button"><span>過去の更新履歴</span></a> </div>
+    <!-- container -->
+    <!-- 製品案内　-->
+    <div class="product">
+      <div style="color: #FFF;background-color:#005387;text-align:center;padding:50px 80px;text-align: justify;">
+        <h3>酒仙 i<br>
+          <span>清酒・焼酎・他</span></h3>
+        <p>TSIの事業は、自社で開発したパッケージソフトをコアとした、有益性のあるソリューションサービスの提供を目的とし、<br>
+          酒造業管理システム「酒仙」販売管理、蔵内管理は、<br>
+          “酒造業”という伝統経営に特化し、酒造業特有の複雑な業務を標準化させたシステムです。<br>
+          製造管理から販売実績に至る一連の流れを極めて簡単な操作で実現させ、 最大の効果を発揮させます。</p>
+      </div>
+      <div class="bgimg-2">
+        <div class="caption"> <span class="border" style="opacity: 0.8;font-size:22px;color: #f7f7f7;text-shadow: 2px 2px 8px #000000;">酒税への対応など煩雑になりがちな酒造業の日常業務をシンプルに。 </span>
+          <div class="p_b"><a class="btn btn-black btn-lg" href="#" role="button"><span>詳細はこちら</span></a> </div>
+        </div>
+      </div>
+      <div style="position:relative;">
+        <div style="color:#FFF;background-color:#9e1b32;text-align:center;padding:50px 80px;text-align: justify;">
+          <h3>酒仙 i<br>
+            <span>ワイン</span></h3>
+        </div>
+      </div>
+      <div class="bgimg-3">
+        <div class="caption"> <span class="border" style="opacity: 0.8;font-size:22px;color: #f7f7f7; text-shadow: 2px 2px 8px #000000;">原料から詰口まで、酒造りを強力サポート！ </span>
+          <div class="p_b"><a class="btn btn-black btn-lg" href="#" role="button"><span>詳細はこちら</span></a> </div>
+        </div>
+      </div>
+      <div style="position:relative;">
+        <div style="color:#FFF;background-color:#c4a514;text-align:center;padding:50px 80px;text-align: justify;">
+          <h3>酒仙 i<br>
+            <span>地ビール</span></h3>
+        </div>
+      </div>
+      <div class="bgimg-4">
+        <div class="caption"> <span class="border" style="opacity: 0.8;font-size:22px;color: #f7f7f7; text-shadow: 2px 2px 8px #000000;">酒類製造業務に必要な機能を標準搭載し、地ビール特有の機能を追加。</span>
+          <div class="p_b"><a class="btn btn-black btn-lg" href="#" role="button"><span>詳細はこちら</span></a> </div>
+        </div>
+      </div>
+      <div style="position:relative;">
+        <div style="color:#FFF;background-color:#d26719;text-align:center;padding:50px 80px;text-align: justify;">
+          <h3>ECサイト構築　酒Qi</h3>
+        </div>
+      </div>
+      <div class="bgimg-5">
+        <div class="caption"> <span class="border" style="opacity: 0.8;font-size:22px;color: #f7f7f7; text-shadow: 2px 2px 8px #000000;">ECサイト構築に必要な機能を標準搭載</span>
+          <div class="p_b"><a class="btn btn-black btn-lg" href="#" role="button"><span>詳細はこちら</span></a> </div>
+        </div>
+      </div>
+    </div>
+    <div class="info text-right">
+      <div class="row">
+        <div class="col-sm-12">
+          <h3>お電話でのお問い合わせはこちら</h3>
+          <ul class="list-inline">
+            <li>金沢本社<br>
+              076-267-7566</li>
+            <li>東京営業所<br>
+              03-6453-6672</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- 資料請求・問合せ -->
+    <div class="form_box">
+      <h1>お問い合わせ</h1>
+      <p class="text-center">ご提供いただいた個人情報は当社にて厳重に管理いたします。<br>
+        なお、個人情報を当社より第三者に提供することはございません。 </p>
+      <form class="form-horizontal">
+        <div class="form-group">
+          <label class="col-sm-2 control-label" for="InputSelect"> ご用件<span class="label label-danger">必須</span></label>
+          <div class="col-sm-10">
+            <select class="form-control" id="InputSelect">
+              <option>資料請求（酒仙）</option>
+              <option>資料請求（酒Q）</option>
+              <option>パートナーについて</option>
+              <option>採用について</option>
+              <option>その他</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-2 control-label"> 会社名<span class="label label-danger">必須</span></label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="CompanyName" placeholder="会社名" autocomplete="organization">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-2 control-label"> 担当者名<span class="label label-danger">必須</span></label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="Name" placeholder="担当者名" autocomplete="name">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-2 control-label"> 電話番号<span class="label label-danger">必須</span></label>
+          <div class="col-sm-10">
+            <input type="tel" class="form-control" id="Tel" placeholder="電話番号">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-2 control-label" for="InputEmail">メール・アドレス <span class="label label-danger">必須</span></label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="InputEmail" placeholder="メール・アドレス" autocomplete="email">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-2 control-label"> 郵便番号</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="Post" placeholder="郵便番号" autocomplete="postal-code">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-2 control-label"> 都道府県</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="address-level1" placeholder="都道府県" autocomplete="address-level1">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-2 control-label"> 市区町村</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="address-level2" placeholder="市区町村" autocomplete="address-level2">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-2 control-label"> 番地・マンション名（1行目）</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="address-line1" placeholder="番地・マンション名（1行目）" autocomplete="address-line1">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-2 control-label"> 番地・マンション名（2行目）</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="address-line2" placeholder="番地・マンション名（2行目）" autocomplete="address-line2">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-2 control-label">お問い合わせ内容<span class="label label-danger">必須</span> </label>
+          <div class="col-sm-10">
+            <textarea name="question_text" cols="50" rows="10" class="form-control" placeholder="（全角500文字まで）"></textarea>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-12 text-center">
+            <button type="submit" class="btn btn-send btn-lg">送　信</button>
+          </div>
+        </div>
+      </form>
+      <!-- 導入実績 -->
+      <!--
+	<div class="row row-0">
+      <div class="col-md-4">
+        <div class="box">
+          <h3> 導入実績１ </h3>
+          <img src="img/com_info.png" class="img-responsive">
+          <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="box">
+          <h3> 導入実績２ </h3>
+          <img src="img/com_info.png" class="img-responsive">
+          <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="box">
+          <h3> 導入実績３ </h3>
+          <img src="img/com_info.png" class="img-responsive">
+          <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        </div>
+      </div>
+	  -->
+	  </div>
+    </div>
+  </div>
+  <!-- フッター -->
+  <div class="flort_ms sp-only">
+    <div class="row row-0">
+      <div class="col-xs-6 bg_seishu"><a href="s_kurauchi.html">清酒・焼酎・他</a></div>
+      <div class="col-xs-6 bg_wine"><a href="p_wine.html">ワイン（果実酒）</a></div>
+      <div class="col-xs-6 bg_beer"><a href="p_beer.html">地ビール</a></div>
+      <div class="col-xs-6 bg_sakeq"><a href="p_ec.html">EC構築</a></div>
+      <div class="col-xs-6 bg_news"><a href="news.html">新着情報</a></div>
+      <div class="col-xs-6 bg_FB"><a href="https://www.facebook.com/TSI-1690253877865115/" target="_blank">FaceBook</a></div>
+    </div>
+  </div>
+  <div class="footer-menu sp-only">
+    <li><a href="policy.html">情報セキュリティ基本方針</a></li>
+    <li><a href="sitemap.html">サイトマップ</a></li>
+    <li><a href="privacy_policy.html">個人情報保護方針</a></li>
+  </div>
+</div>
+<!-- TemplateEndEditable -->
+<footer>
+  <ul class="list-inline text-center">
+    <li><a href="policy.html">情報セキュリティ基本方針</a></li>
+    <li><a href="sitemap.html">サイトマップ</a></li>
+    <li><a href="privacy_policy.html">個人情報保護方針</a></li>
+  </ul>
+  <div class="f_l"> <img src="img/logo.png">
+    <p>Copyright © TSI Co,.Ltd All Rights Reserved</p>
+  </div>
+</footer>
+<!-- フロートメニュー　-->
+<div id="floatMenu" class="pc-only">
+  <ul id="nav2">
+    <li><a class="seishu" href="s_kurauchi.html"><span>清酒・焼酎・他</span></a></li>
+  </ul>
+  <ul id="nav2_w">
+    <li><a class="wine" href="p_wine.html"><span>ワイン（果実酒）</span></a></li>
+  </ul>
+  <ul id="nav2_b">
+    <li><a class="beer" href="p_beer.html"><span>地ビール</span></a></li>
+  </ul>
+  <ul id="nav2_q">
+    <li><a class="sakeq" href="p_ec.html"><span>EC構築</span></a></li>
+  </ul>
+  <ul id="nav2_c_n">
+    <li><a class="contact_n" href="contact.html"><span>お問い合わせ</span></a></li>
+  </ul>
+  <ul id="nav2_n_n">
+    <li><a class="news_n" href="news.html"><span>新着情報</span></a></li>
+  </ul>
+  <ul id="nav2_f">
+    <li class="Facebook_blue"><a class="facebook" href="https://www.facebook.com/TSI-1690253877865115/" target="_blank"><span>FACEBOOK</span></a></li>
+  </ul>
+</div>
+<script src="js/floatMenu.js"></script>
+</body>
+</html>

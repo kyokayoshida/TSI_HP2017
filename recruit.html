@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="widtd=device-widtd, initial-scale=1">
+<title>Bootstrap Sample</title>
+<!-- BootstrapのCSS読み込み -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/common.css" rel="stylesheet">
+<link href="css/recruit.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet">
+<link href="css/hover-min.css" rel="stylesheet">
+<!-- jQuery読み込み -->
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
+<script src="js/jquery.dimensions.js"></script>
+<script src="js/wow.js"></script>
+<script>
+new WOW().init();
+</script>
+<!-- BootstrapのJS読み込み -->
+<script src="js/bootstrap.min.js"></script>
+<!--　nav2 -->
+<script type="text/javascript">
+    var name = "#floatMenu";
+    var menuYloc = null;
+     
+        $(document).ready(function(){
+            menuYloc = parseInt($(name).css("top").substring(0,$(name).css("top").indexOf("px")))
+            $(window).scroll(function () { 
+                offset = menuYloc+$(window).scrollTop()+"px";
+                $(name).animate({top:offset},{duration:900,queue:false});
+            });
+        }); 
+</script>
+</head>
+<body>
+<header>
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+<img src="img/logo.png" class="m_r">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#gnavi"> <span class="sr-only">メニュー</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+<div id="gnavi" class="collapse navbar-collapse">
+<ul class="gnav list-inline pc-only">
+  <li class="current"><a href="index.html" data-hover="HOME">HOME</a></li>
+  <li><a href="company.html" data-hover="会社案内">会社案内</a></li>
+  <li><a href="product.html" data-hover="製品案内">製品案内</a></li>
+  <li><a href="performance.html" data-hover="導入実績">導入実績</a></li>
+  <li><a href="partner.html" data-hover="パートナー">パートナー</a></li>
+  <li><a href="recruit.html" data-hover="採用情報">採用情報</a></li>
+  <li><a href="contact.html" data-hover="お問い合わせ">お問い合わせ</a></li>
+</ul>
+<ul class="gnav sp-only">
+  <p><a href="index.html" data-hover="HOME">HOME</a></p>
+  <p><a href="company.html" data-hover="会社案内">会社案内</a></p>
+  <p><a href="product.html" data-hover="製品案内">製品案内</a></p>
+  <p><a href="performance.html" data-hover="導入実績">導入実績</a></p>
+  <p><a href="partner.html" data-hover="パートナー">パートナー</a></p>
+  <p><a href="recruit.html" data-hover="採用情報">採用情報</a></p>
+  <p><a href="contact.html" data-hover="お問い合わせ">お問い合わせ</a></p>
+</ul>
+</nav>
+</header>
+<div class="container">
+  <div class="rinen">
+    <h1 class="h2">採用情報</h1>
+   
+  </div>
+  <div class="policy">
+    <h2>ITで伝統の技に貢献する</h2>
+    <h3 class="h4">メンバーが目指しているのは、酒造業界の活性化。<br>
+      販売ルートの拡充、コスト削減など、ITで支援することがミッションです。</h3>
+    <p>日本古来より続く、伝統文化「酒造り」を、ITソリューションで応援する、それが弊社の仕事です。 <br>
+      古くからの手法だけでは対応しきれない、現在の酒税制度への対応、 <br>
+      製造・在庫・販売・受発注の管理、販売ルートの拡販などの問題を解決するため、<br>
+      酒造業管理システム「酒仙」、ECサイト構築システム「酒Q」をはじめとした、<br>
+      酒造業専門のソフトウェアを提供しています。</p>
+    <h2>TSIの人材教育</h2>
+    <h3 class="h4">相互理解に基づく信頼関係を築き、"伸ばす"環境をご用意します。</h3>
+    <p>当社では、社員教育については専任のコーチがつきます。<br>
+      酒造会社の業務フロー（蔵内管理・販売管理・原価管理・資材管理 ・税務管理等）の概要はもちろんのこと、<br>
+      専任コーチが担当する現 場の視察など体感していただきます。<br>
+      お客様の「生の声」にできるだけたくさん触れるためです。<br>
+      当社のソリューションスキルは、システム開発・システム営業・運用保守サービスのどれをとっても問題解決の思考からスタートし、 
+      現場で培った実践力が個人の価値を高めると考えます。</p>
+    <h2>社長から一言</h2>
+    <h3 class="h4">これまで培ってきたストーリーを基に、<br>
+      新たな時代に則した企業文化を社員全員で創り上げて行きましょう。</h3>
+    <p>業界のスキルやノウハウも大事ですが、まずはこれまでやり遂げた経験を持っているかどうか<br>
+      という点を重視したいですね。<br>
+      ご自身で、「この経験は胸を張ってアピールできる」ものがある方であれば、<br>
+      きっと自分で考えて実行するチカラを有しているものだと、私は考えています。<br>
+      そして、そういった方こそ、仕事で活躍できると思っているんです。<br>
+      将来的に、どうなりたいか、どのように働いていきたいか、<br>
+      何かしらビジョンをお持ちの方にお会いしたいですね。内容は何でも構わないと思っています。<br>
+      大げさな目標でなくたって良い。自分の今後について考えている方なら、目的を持って力強く働いていけるでしょう。<br>
+      また、もし私がその目標に共感できたなら、ぜひ協力させてほしいと思っているのです。<br>
+      とにかく面接では、お互いについて語り合えたら嬉しいですね。酌を交わすこともありですよ。</p>
+    <!-- アコーディオングループ -->
+    <div class="panel-group" id="accordion">
+      <!-- ストレスを感じさせない操作性 -->
+      <div class="panel panel-accordion"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse_1">
+        <div class="panel-heading">
+          <h4 class="panel-title">新卒採用 募集要項
+            <div class="pull-right"> <span class="glyphicon glyphicon-chevron-right"></span> </div>
+          </h4>
+        </div>
+        </a>
+        <div id="collapse_1" class="panel-collapse collapse fade">
+          <div class="panel-body">
+            <h3 class="h4">マイナビエントリー受付中<a href="https://job.mynavi.jp/18/pc/search/corp107757/outline.html" target="_blank"><img src="https://job.mynavi.jp/conts/kigyo/2018/logo/banner_entry_160_45.gif" alt="マイナビ2018" border="0" class="entry"></a> </h3>
+            <table class="table table-bordered">
+              <tr>
+                <td class="active">募集職種・分野</td>
+                <td>◆総合職</td>
+              </tr>
+              <tr>
+                <td class="active">仕事内容</td>
+                <td>＜ソリューション営業＞<br>
+                  酒造会社の経営上あるいは業務上の問題解決を前提に
+                  デモンストレーション・ヒアリング・要件分析・提案へと進めてまいります。<br>
+                  さらに、詳細な見積書作成・受注～導入指導・運用・保守にまで一貫した
+                  ソリューションサービスをお客様に提供します。<br>
+                  このフェーズに至るまで、新入社員は上司に繰り返し同行して徐々に 慣れていただきます。<br>
+                  「地域・伝統・銘柄・食文化・製造工程」など豊富な知識が身につきます。<br>
+                  <br>
+                  ＜システムエンジニア＞<br>
+                  お客様の要望にて、綿密な打ち合わせのもとで当社オリジナルソフトウェアの
+                  カスタマイズを行います。<br>
+                  直接、お客様からヒアリングできるので現場の声を聞くことができます。<br>
+                  さらに経験を積むことで将来的に、上流工程の本質的な問題解決などの
+                  コンサルティングやプロジェクト管理を行っていただきます。<br>
+                  <br>
+                  ＜プログラマー＞<br>
+                  当社オリジナルソフトウェアのレベルアップ、バージョンアップの
+                  企画・開発を行っていただきます。<br>
+                  また、簡単なカスタマイズやヒアリングにも同席させてもらえます。<br>
+                  お客様への運用指導も行ってもらいますのでコミュニケーションや
+                  文章作成およびデザインなどの表現能力が必要となります。<br>
+                  <br>
+                  ＜ネットワークエンジニア＞<br>
+                  当社が提唱しているオリジナルソフトウェアの安全・安心・安定的な運用・
+                  保守では、特にサーバ環境設定とネットワーク構築が重要となります。<br>
+                  カリキュラムに沿った外部研修と早期現場同行による実践にてスキルアップしていきます。</td>
+              </tr>
+              <tr>
+                <td class="active">初任給</td>
+                <td>◆月給 ※2016年4月実績<br>
+                  大学院卒 225,000円<br>
+                  大学卒  205,000円<br>
+                  専短卒  185,000円</td>
+              </tr>
+              <tr>
+                <td class="active">諸手当</td>
+                <td>通勤手当(上限20,000円/月)<br>
+                  開発手当、販売手当、指導手当、プロジェクト手当、資格手当、住宅手当、赴任手当、家族手当、家族移転手当</td>
+              </tr>
+              <tr>
+                <td class="active">昇給</td>
+                <td>年1回(4月)</td>
+              </tr>
+              <tr>
+                <td class="active">賞与</td>
+                <td>年2回(7月、12月)</td>
+              </tr>
+              <tr>
+                <td class="active">休日休暇</td>
+                <td>週休2日制(土日)、祝祭日<br>
+                  年次有給休暇：初年度10日、入社6ヵ月後取得<br>
+                  夏期休暇、年末年始休暇、慶弔休暇、介護休暇、産前産後・育児休暇<br>
+                  <br>
+                  ※年間休日120日（2015年度実績：125日）</td>
+              </tr>
+              <tr>
+                <td class="active">福利厚生</td>
+                <td>◆社会保険完備：健康保険、厚生年金、雇用保険、労災保険<br>
+                  ◆各種制度：財形貯蓄制度、報奨金制度<br>
+                  ◆資格取得支援<br>
+                  ◆健康診断(年1回)<br>
+                  ◆社員旅行<br>
+                  ◆社内行事：新年会、花見会、BBQ大会、忘年会、全社懇親会など</td>
+              </tr>
+              <tr>
+                <td class="active">勤務地</td>
+                <td>◆本社<br>
+                  石川県金沢市藤江北1丁目566番地<br>
+                  <br>
+                  ◆東京営業所<br>
+                  東京都港区芝5丁目29番20号クロスオフィス三田703</td>
+              </tr>
+              <tr>
+                <td class="active">勤務時間</td>
+                <td>9:00～18:00(休憩60分)</td>
+              </tr>
+              <tr>
+                <td class="active">教育制度</td>
+                <td>入社後は、約3ヵ月間のビジネスマナー、IT知識等の新入社員研修を受講していただきます。<br>
+                  その後は職種により異なりますが、OJTや職種に応じた各種IT専門知識研修など、それぞれに見合った
+                  研修スケジュールをご用意いたします。</td>
+              </tr>
+              <tr>
+                <td class="active">募集人数</td>
+                <td>若干名</td>
+              </tr>
+              <tr>
+                <td class="active">募集学科</td>
+                <td>全学部・全学科</td>
+              </tr>
+              <tr>
+                <td class="active">採用の流れ</td>
+                <td>○マイナビ2018よりエントリー<br>
+                  ▼<br>
+                  ○会社説明会<br>
+                  ▼<br>
+                  ○一次選考<br>
+                  書類選考(履歴書・エントリーシート)<br>
+                  ▼<br>
+                  ○二次選考<br>
+                  筆記試験<br>
+                  個人面接<br>
+                  ▼<br>
+                  適性検査(Webにて受検いただきます)<br>
+                  ▼<br>
+                  ○最終選考<br>
+                  社長面接<br>
+                  ▼<br>
+                  内々定</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- アコーディオングループ -->
+      <div class="panel-group" id="accordion">
+        <!-- ストレスを感じさせない操作性 -->
+        <div class="panel panel-accordion"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse_2">
+          <div class="panel-heading">
+            <h4 class="panel-title">中途採用 募集要項
+              <div class="pull-right"> <span class="glyphicon glyphicon-chevron-right"></span> </div>
+            </h4>
+          </div>
+          </a>
+          <div id="collapse_2" class="panel-collapse collapse fade">
+            <div class="panel-body">
+              <h3 class="h4">◆ソリューションサービスエンジニア</h3>
+              <table class="table table-bordered">
+                <tr>
+                  <td class="active">仕事内容</td>
+                  <td>酒造業に特化した自社開発システム「酒仙」のコンサル提案から開発、運用・保守といった一連の業務を担います。<br>
+                    【「酒仙」の特徴】<br>
+                    ▽蔵内管理<br>
+                    原料や資材調達、仕込、生産、トレーサビリティ、原価管理など酒造業特有の生産管理システム<br>
+                    ▽販売管理<br>
+                    受注、売上、売掛、買掛、在庫管理等の販売管理システム<br>
+                    この２つをコアとしたオリジナルパッケージソフトです。<br>
+                    それぞれが高いスペックを誇り、更に相互の情報のやりとりがスムーズにできる点で評価されています。<br>
+                    <br>
+                    【仕事の進め方】<br>
+                    「酒仙」を利用するクライアントは全国に300以上。<br>
+                    お客様の抱える業務上の問題解決を前提としたソリューションサービスを提供します。<br>
+                    必要に応じて、カスタマイズや新バージョンの提案も行います。<br>
+                    <br>
+                    <br>
+                    システム導入時には、全国各地のクライアント先を訪れます。<br>
+                    お客様がシステムを使いこなせるよう、コミュニケーションスキルを発揮してください！ </td>
+                </tr>
+                <tr>
+                  <td class="active">求める人材</td>
+                  <td>■大卒以上<br>
+                    ■システム開発の実務経験のある方<br>
+                    ■要普免 （AT限定可）<br>
+                    <br>
+                    【歓迎する経験・知識】<br>
+                    □セールスエンジニアの実務経験<br>
+                    □販売・生産管理・食品業界に関する知識<br>
+                    □簿記の知識<br>
+                    <br>
+                    【このような方は歓迎！】<br>
+                    □話し上手、聞き上手な方（お客様のニーズを正確に把握できる方）<br>
+                    □粘り強い方（問題解決のためあきらめない姿勢を持てる方）<br>
+                    □お酒に興味のある方（酒造業という日本の伝統文化の発展に意欲的な方）</td>
+                </tr>
+                <tr>
+                  <td class="active">初任給</td>
+                  <td>◆月給 ※2016年4月実績<br>
+                    大学院卒 225,000円<br>
+                    大学卒  205,000円<br>
+                    専短卒  185,000円</td>
+                </tr>
+                <tr>
+                  <td class="active">勤務地</td>
+                  <td>◆金沢本社<br>
+                    石川県金沢市藤江北1丁目566番地<br>
+                    <br>
+                    ◆東京営業所<br>
+                    東京都港区芝5丁目29番20号クロスオフィス三田703</td>
+                </tr>
+                <tr>
+                  <td class="active">給与</td>
+                  <td>年1回(4月)</td>
+                </tr>
+                <tr>
+                  <td class="active">賞与</td>
+                  <td>■月給／23万5,000円以上<br>
+                    <br>
+                    ※上記は保証される最低給与額です。<br>
+                    ※ご年齢やご経験、能力などを考慮し、当社規定内において優遇・決定いたします。<br>
+                    ※試用期間中（3ヵ月）も待遇は変わりません</td>
+                </tr>
+                <tr>
+                  <td class="active">休日休暇</td>
+                  <td>週休2日制(土日)、祝祭日<br>
+                    年次有給休暇：初年度10日、入社6ヵ月後取得<br>
+                    夏期休暇、年末年始休暇、慶弔休暇、介護休暇、産前産後・育児休暇<br>
+                    <br>
+                    ※年間休日120日（2015年度実績：125日）</td>
+                </tr>
+                <tr>
+                  <td class="active">勤務時間</td>
+                  <td>9:00～18:00(休憩60分)</td>
+                </tr>
+                <tr>
+                  <td class="active">昇給</td>
+                  <td>年1回(4月)</td>
+                </tr>
+                <tr>
+                  <td class="active">賞与</td>
+                  <td>年2回(7月、12月)</td>
+                </tr>
+                <tr>
+                  <td class="active">諸手当</td>
+                  <td>通勤手当(上限20,000円/月)<br>
+                    開発手当、販売手当、指導手当、プロジェクト手当、資格手当 住宅手当、赴任手当、家族手当、家族移転手当</td>
+                </tr>
+                <tr>
+                  <td class="active">休日休暇</td>
+                  <td>週休2日制(土日)、祝祭日<br>
+                    年次有給休暇：初年度10日、入社6ヵ月後取得<br>
+                    夏期休暇、年末年始休暇、慶弔休暇、介護休暇、産前産後・育児休暇<br>
+                    <br>
+                    ※年間休日120日（2015年度実績：125日）</td>
+                </tr>
+                <tr>
+                  <td class="active">福利厚生</td>
+                  <td>◆社会保険完備：健康保険、厚生年金、雇用保険、労災保険<br>
+                    ◆各種制度：財形貯蓄制度、報奨金制度<br>
+                    ◆資格取得支援<br>
+                    ◆健康診断(年1回)<br>
+                    ◆社員旅行<br>
+                    ◆社内行事：新年会、花見会、BBQ大会、忘年会、全社懇親会など</td>
+                </tr>
+                <tr>
+                  <td class="active">応募方法</td>
+                  <td>◆◇◆ お問い合わせよりご連絡ください。 ◇◆◇</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 資料請求・問合せ -->
+  <div class="form_box">
+    <h1 class="h2">お問い合わせ</h1>
+    <p class="text-center">ご提供いただいた個人情報は当社にて厳重に管理いたします。<br>
+      なお、個人情報を当社より第三者に提供することはございません。 </p>
+    <form class="form-horizontal">
+      <div class="form-group">
+        <label class="col-sm-2 control-label" for="InputSelect"> ご用件<span class="label label-danger">必須</span></label>
+        <div class="col-sm-10">
+          <select class="form-control" id="InputSelect">
+            <option>資料請求（酒仙）</option>
+            <option>資料請求（酒Q）</option>
+            <option>パートナーについて</option>
+            <option>採用について</option>
+            <option>その他</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-2 control-label"> 会社名<span class="label label-danger">必須</span></label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="CompanyName" placeholder="会社名" autocomplete="organization">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-2 control-label"> 担当者名<span class="label label-danger">必須</span></label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="Name" placeholder="担当者名" autocomplete="name">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-2 control-label"> 電話番号<span class="label label-danger">必須</span></label>
+        <div class="col-sm-10">
+          <input type="tel" class="form-control" id="Tel" placeholder="電話番号">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-2 control-label" for="InputEmail">メール・アドレス <span class="label label-danger">必須</span></label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="InputEmail" placeholder="メール・アドレス" autocomplete="email">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-2 control-label"> 郵便番号</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="Post" placeholder="郵便番号" autocomplete="postal-code">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-2 control-label"> 都道府県</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="address-level1" placeholder="都道府県" autocomplete="address-level1">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-2 control-label"> 市区町村</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="address-level2" placeholder="市区町村" autocomplete="address-level2">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-2 control-label"> 番地・マンション名（1行目）</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="address-line1" placeholder="番地・マンション名（1行目）" autocomplete="address-line1">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-2 control-label"> 番地・マンション名（2行目）</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="address-line2" placeholder="番地・マンション名（2行目）" autocomplete="address-line2">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-2 control-label">お問い合わせ内容<span class="label label-danger">必須</span> </label>
+        <div class="col-sm-10">
+          <textarea name="question_text" cols="50" rows="10" class="form-control" placeholder="（全角500文字まで）"></textarea>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-12 text-center">
+          <button type="submit" class="btn btn-send btn-lg">送　信</button>
+        </div>
+      </div>
+    </form>
+	</div>
+  </div>
+  <!-- フッター -->
+  <div class="flort_ms sp-only">
+    <div class="row row-0">
+      <div class="col-xs-6 bg_seishu"><a href="s_kurauchi.html">清酒・焼酎・他</a></div>
+      <div class="col-xs-6 bg_wine"><a href="p_wine.html">ワイン（果実酒）</a></div>
+      <div class="col-xs-6 bg_beer"><a href="p_beer.html">地ビール</a></div>
+      <div class="col-xs-6 bg_sakeq"><a href="p_ec.html">EC構築</a></div>
+      <div class="col-xs-6 bg_news"><a href="news.html">新着情報</a></div>
+      <div class="col-xs-6 bg_FB"><a href="https://www.facebook.com/TSI-1690253877865115/" target="_blank">FaceBook</a></div>
+    </div>
+  </div>
+  <div class="footer-menu sp-only">
+    <li><a href="policy.html">情報セキュリティ基本方針</a></li>
+    <li><a href="sitemap.html">サイトマップ</a></li>
+    <li><a href="privacy_policy.html">個人情報保護方針</a></li>
+  </div>
+
+<!-- TemplateEndEditable -->
+<footer>
+  <ul class="list-inline text-center">
+    <li><a href="policy.html">情報セキュリティ基本方針</a></li>
+    <li><a href="sitemap.html">サイトマップ</a></li>
+    <li><a href="privacy_policy.html">個人情報保護方針</a></li>
+  </ul>
+  <div class="f_l"> <img src="img/logo.png">
+    <p>Copyright © TSI Co,.Ltd All Rights Reserved</p>
+  </div>
+</footer><!-- フロートメニュー　-->
+<div id="floatMenu" class="pc-only">
+  <ul id="nav2">
+    <li><a class="seishu" href="s_kurauchi.html"><span>清酒・焼酎・他</span></a></li>
+  </ul>
+  <ul id="nav2_w">
+    <li><a class="wine" href="p_wine.html"><span>ワイン（果実酒）</span></a></li>
+  </ul>
+  <ul id="nav2_b">
+    <li><a class="beer" href="p_beer.html"><span>地ビール</span></a></li>
+  </ul>
+  <ul id="nav2_q">
+    <li><a class="sakeq" href="p_ec.html"><span>EC構築</span></a></li>
+  </ul>
+  <ul id="nav2_c_n">
+    <li><a class="contact_n" href="contact.html"><span>お問い合わせ</span></a></li>
+  </ul>
+  <ul id="nav2_n_n">
+    <li><a class="news_n" href="news.html"><span>新着情報</span></a></li>
+  </ul>
+  <ul id="nav2_f">
+    <li class="Facebook_blue"><a class="facebook" href="https://www.facebook.com/TSI-1690253877865115/" target="_blank"><span>FACEBOOK</span></a></li>
+  </ul>
+</div>
+<script src="js/floatMenu.js"></script>
+</body>
+</html>

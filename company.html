@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap Sample</title>
+<!-- BootstrapのCSS読み込み -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/common.css" rel="stylesheet">
+<link href="css/company.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet">
+<link href="css/hover-min.css" rel="stylesheet">
+<!-- jQuery読み込み -->
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
+<script src="js/jquery.dimensions.js"></script>
+<script src="js/wow.js"></script>
+<script>
+new WOW().init();
+</script>
+<!-- BootstrapのJS読み込み -->
+<script src="js/bootstrap.min.js"></script>
+<!--　nav2 -->
+<script type="text/javascript">
+    var name = "#floatMenu";
+    var menuYloc = null;
+     
+        $(document).ready(function(){
+            menuYloc = parseInt($(name).css("top").substring(0,$(name).css("top").indexOf("px")))
+            $(window).scroll(function () { 
+                offset = menuYloc+$(window).scrollTop()+"px";
+                $(name).animate({top:offset},{duration:900,queue:false});
+            });
+        }); 
+</script>
+</head>
+<body>
+<header>
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+<img src="img/logo.png" class="m_r">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#gnavi"> <span class="sr-only">メニュー</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+<div id="gnavi" class="collapse navbar-collapse">
+<ul class="gnav list-inline pc-only">
+  <li class="current"><a href="index.html" data-hover="HOME">HOME</a></li>
+  <li><a href="company.html" data-hover="会社案内">会社案内</a></li>
+  <li><a href="product.html" data-hover="製品案内">製品案内</a></li>
+  <li><a href="performance.html" data-hover="導入実績">導入実績</a></li>
+  <li><a href="partner.html" data-hover="パートナー">パートナー</a></li>
+  <li><a href="recruit.html" data-hover="採用情報">採用情報</a></li>
+  <li><a href="contact.html" data-hover="お問い合わせ">お問い合わせ</a></li>
+</ul>
+<ul class="gnav sp-only">
+  <p><a href="index.html" data-hover="HOME">HOME</a></p>
+  <p><a href="company.html" data-hover="会社案内">会社案内</a></p>
+  <p><a href="product.html" data-hover="製品案内">製品案内</a></p>
+  <p><a href="performance.html" data-hover="導入実績">導入実績</a></p>
+  <p><a href="partner.html" data-hover="パートナー">パートナー</a></p>
+  <p><a href="recruit.html" data-hover="採用情報">採用情報</a></p>
+  <p><a href="contact.html" data-hover="お問い合わせ">お問い合わせ</a></p>
+</ul>
+</nav>
+</header>
+<!--
+<div class="sub_img">
+  <div class="jumbotron">
+    <div class="container">
+      <h2>会社案内</h2>
+      <p>Company Information</p>
+    </div>
+  </div>
+</div>
+-->
+<!-- パンくずリスト　-->
+<div class="container">
+  <div class="rinen">
+    <h1 class="h2">会社案内</h1>
+    <p>我社は、お客様の成功と社員個人の人生の成功、そして会社の成功が共に信頼関係で築かれ、<br>
+      相互に喜びあえる環境を築き上げることを使命としています。 <br>
+      お客様に有益なソリューションサービスの提供と
+      永続的なパートナーシップの確立は、<br>
+      業界活性化を導き出します。<br>
+      一方で、社員個人は自らシナリオを描きよりよいステージで思う存分鼓舞する。<br>
+      これが三位一体の成功の要因であると考えます。 </p>
+    <div class="row row-20">
+      <!-- <div class="col-md-6">-->
+      <div class="wow fadeInUp" data-wow-duration="1.0s" data-wow-delay="0.5s" data-wow-offset="2"><img src="img/company_info.png" class="img-responsive"></div>
+      <!-- </div>-->
+      <!-- <div class="col-md-6">-->
+      <div class="wow fadeInRight" data-wow-duration="1.0s" data-wow-delay="1.0s">
+        <table class="table table-bordered">
+          <tr>
+            <td class="active">社名</td>
+            <td>株式会社ティー・エス・アイ</td>
+          </tr>
+          <tr>
+            <td class="active">設立</td>
+            <td>平成5年4月</td>
+          </tr>
+          <tr>
+            <td class="active">資本金</td>
+            <td>10,000,000円</td>
+          </tr>
+          <tr>
+            <td class="active">代表取締役</td>
+            <td>寺 良彦</td>
+          </tr>
+          <tr>
+            <td class="active">本社</td>
+            <td>〒920-0345 　石川県金沢市藤江北一丁目566番地<br>
+              電話:076-267-7566 　IP電話:050-3785-8485<br>
+              FAX:076-267-7568 </td>
+          </tr>
+          <tr>
+            <td class="active">営業所</td>
+            <td>〒108-0014  東京都港区芝5丁目29番20号703<br>
+              電話:03-6453-6672 　IP電話:050-3785-8275<br>
+              FAX:03-6453-6673 </td>
+          </tr>
+          <tr>
+            <td class="active">主な取引先</td>
+            <td>酒類製造業各種(清酒・焼酎・ワイン・地ビール・その他)/
+              大学研究機関・官公庁研究機関 / 富士通(株)/ 日本電気(株)/ 
+              日本ＩＢＭ(株)/マジックソフトウェア・ジャパン(株)/ 
+              (株)大塚商会 / 扶桑電通(株) /(株)石川コンピュータ・センター/ 
+              日本事務器(株)/オリックス(株)/・・・他（順不同） </td>
+          </tr>
+        </table>
+      </div>
+      <!-- </div> -->
+    </div>
+  </div>
+  <div class="map">
+    <h1 class="h2">アクセス</h1>
+    <div class="row row-20">
+      <div class="col-md-6">
+        <p>本社</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1601.6063372030687!2d136.6261242!3d36.5971866!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff9ccc651896e9b%3A0xa2e5c4cafceb79c5!2z77yI5qCq77yJ44OG44Kj44O844O744Ko44K544O744Ki44Kk!5e0!3m2!1sja!2sjp!4v1435212746927"width="100%" height="200%" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      <div class="col-md-6">
+        <p> 東京営業所 </p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1621.1304497176345!2d139.74514576939634!3d35.645943160212944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bb19e8d48dd%3A0xd7334f588321425f!2z5qCq5byP5Lya56S-44OG44Kj44O844O744Ko44K544O744Ki44Kk!5e0!3m2!1sja!2sjp!4v1470701481111" width="100%" height="200%" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+　       </div>
+  </div>
+  <div class="Message">
+    <h1 class="h2">社長挨拶</h1>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="wow fadeInUp" data-wow-duration="1.0s" data-wow-delay="0.5s" data-wow-offset="10"><img src="img/pre_photo.jpg" class="img-responsive"></div>
+        <div class="wow fadeInUp" data-wow-duration="1.0s" data-wow-delay="2.0s" data-wow-offset="10"><img src="img/sign.jpg" class="img-responsive"></div>
+      </div>
+      <div class="col-md-10">
+        <div class="wow fadeInRight" data-wow-duration="1.0s" data-wow-delay="1.5s">
+          <p> 社会構造そのものの変革が急激にすすむ中で、多様化した市場ニーズを的確に捉え、 <br>
+            お客様に有効性のある真の情報価値を提供することが 私たちに与えられた課題なのです。<br>
+            <br>
+            ティー・エス・アイは、この大きな課題に向けてオリジナルソフトウェアパッケージをコアとした<br>
+            ソリューションサービスの提供を行ってまいりました。<br>
+            <br>
+            特に、酒造業管理システム「酒仙」につきましては、<br>
+            設立以来、日本人が誇るべき伝統文化をITの視点から研究してまいりました。<br>
+            “酒造り”という独特の製法や酒税法など特有の管理業務であることから、<br>
+            開発・運用面では、 都度様々な問題に直面し、自らその問題を解決すべく、 <br>
+            現場・現物・現認主義を貫いてまいりました。<br>
+            <br>
+            そして、新たなソリューションサービスの現場では、<br>
+            オリジナルブランドとして市場に浸透させるべく、 まずは現場力強化に向けて<br>
+            安心・安全・安定的なシステムの提供に磨きをかけてまいりたいと考えます。 </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="Message pc-only">
+    <h1 class="h2">会社沿革</h1>
+    <div class="wow fadeInUp" data-wow-duration="1.0s" data-wow-delay="1.0s" data-wow-offset="10">
+      <table class="brwsr1">
+        <tr>
+          <td> Company </td>
+          <th></th>
+          <td> Product </td>
+        </tr>
+      </table>
+    </div>
+    <div class="wow fadeInUp" data-wow-duration="1.0s" data-wow-delay="2.0s" data-wow-offset="10">
+      <table class="brwsr2">
+        <tr>
+          <td class="data"> ソフトランディング創業 </td>
+          <th>1992</th>
+          <td class="data"> 酒造業管理システム「酒仙Ver.1」開発・リリース<br>
+            酒卸業管理システム「ひょうたん」開発・リリース<br>
+            統合販売管理システム「六芸名人」開発・リリース </td>
+        </tr>
+        <tr>
+          <td class="bar" colspan="6"></td>
+        </tr>
+        <tr>
+          <td class="data"> 有限会社ソフトランディング設立 <br>
+            （資本金300万円） </td>
+          <th>1993</th>
+          <td class="data"> DXF、NC変換システム「変換名人」開発・リリース </td>
+        </tr>
+        <tr>
+          <td class="bar" colspan="6"></td>
+        </tr>
+        <tr>
+          <td class="data"></td>
+          <th>1995</th>
+          <td class="data"> 酒小売業管理システム「ひょうたんJr.」リリース<br>
+            「酒仙Ver.2」販売管理・蔵内管理システムリリース </td>
+        </tr>
+        <tr>
+          <td class="bar" colspan="6"></td>
+        </tr>
+        <tr>
+          <td class="data"> 株式会社ティー・エス・アイに社名変更 </td>
+          <th>1996</th>
+          <td class="data"> 「酒仙Ver.2EX」販売管理・蔵内管理システムリリース<br>
+            「酒仙Ver.3」販売管理・蔵内管理システムリリース </td>
+        </tr>
+        <tr>
+          <td class="bar" colspan="6"></td>
+        </tr>
+        <tr>
+          <td class="data"></td>
+          <th>1997</th>
+          <td class="data"> 「酒仙Ver3EX」販売管理・蔵内管理システムリリース </td>
+        </tr>
+        <tr>
+          <td class="bar" colspan="6"></td>
+        </tr>
+        <tr>
+          <td class="data">東京営業所 開設 </td>
+          <th>1999</th>
+          <td class="data"></td>
+        </tr>
+        <tr>
+          <td class="bar" colspan="6"></td>
+        </tr>
+        <tr>
+          <td class="data"></td>
+          <th>2000</th>
+          <td class="data"> 「酒仙Ver.5」販売管理・蔵内管理システムリリース<br>
+            「酒仙ソリューション21」スタート </td>
+        </tr>
+        <tr>
+          <td class="bar" colspan="6"></td>
+        </tr>
+        <tr>
+          <td class="data"></td>
+          <th>2002</th>
+          <td class="data"> 「酒仙Ver.5EX」販売管理・蔵内管理システムリリース </td>
+        </tr>
+        <tr>
+          <td class="bar" colspan="6"></td>
+        </tr>
+        <tr>
+          <td class="data"></td>
+          <th>2005</th>
+          <td class="data"> 「TSIソリューション21forWeb」スタート </td>
+        </tr>
+        <tr>
+          <td class="bar" colspan="6"></td>
+        </tr>
+        <tr>
+          <td class="data"></td>
+          <th>2007</th>
+          <td class="data"> 「酒仙Ver.5EXプラス」販売管理・蔵内管理システムリリース<br>
+            ECサイト構築支援システム「酒Ｑ」リリース </td>
+        </tr>
+        <tr>
+          <td class="bar" colspan="6"></td>
+        </tr>
+        <tr>
+          <td class="data"> 金沢市に本社移転 </td>
+          <th>2009</th>
+          <td class="data"> ECサイト構築支援システム「酒ＱVer.2」リリース </td>
+        </tr>
+        <tr>
+          <td class="bar" colspan="6"></td>
+        </tr>
+        <tr>
+          <td class="data"></td>
+          <th>2010</th>
+          <td class="data"> 「酒仙Ver.6」販売管理・蔵内管理システムリリース </td>
+        </tr>
+        <tr>
+          <td class="bar" colspan="6"></td>
+        </tr>
+        <tr>
+          <td class="data"></td>
+          <th>2011</th>
+          <td class="data"> 「酒仙Ver.6プラス」販売管理・蔵内管理システムリリース<br>
+            ECサイト構築支援システム「酒Ｑi」リリース </td>
+        </tr>
+        <tr>
+          <td class="bar" colspan="6"></td>
+        </tr>
+        <tr>
+          <td class="data"> 港区虎ノ門に東京営業所移転 </td>
+          <th>2013</th>
+          <td class="data"></td>
+        </tr>
+        <tr>
+          <td class="bar" colspan="6"></td>
+        </tr>
+        <tr>
+          <td class="data"></td>
+          <th>2014</th>
+          <td class="data"> 「酒仙 i 」販売管理・蔵内管理システムリリース<br>
+            財団法人北國銀行産業振興財団より表彰 </td>
+        </tr>
+        <tr>
+          <td class="bar" colspan="6"></td>
+        </tr>
+        <tr>
+          <td class="data"> 本社新社屋完成・移転 </td>
+          <th>2015</th>
+          <td class="data"> 「酒仙 i 」が「生産性向上設備投資促進税制」の対象となる<br>
+            先端設備（ソフトウェア）として認定 </td>
+        </tr>
+        <tr>
+          <td class="bar" colspan="6"></td>
+        </tr>
+        <tr>
+          <td class="data"> 港区芝に東京営業所移転 </td>
+          <th>2016</th>
+          <td class="data"> 「酒仙 i プラス」販売管理・蔵内管理システムリリース<br>
+            ｢ISO/IEC 27001:2013」の認証を取得<br>
+            平成28年度プレミアム石川ブランド製品　認定 </td>
+        </tr>
+        <tr>
+          <td class="bar" colspan="6"></td>
+        </tr>
+        <tr>
+          <td class="data"></td>
+          <th>2017</th>
+          <td class="data"> 「酒仙 i」地ビール管理システムリリース<br>
+            経済産業省　IT導入支援事業者として採択される </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="Message sp-only">
+    <h1 class="h2">会社沿革</h1>
+    <!-- ここから -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="text-center"><a data-toggle="collapse" data-parent="#accordion" href="#collapse1">1992年</a></h4>
+      </div>
+	  <div id="collapse1" class="panel-collapse collapse">
+		  <div class="panel-body">
+			<!-- ここから -->
+			  <p>ソフトランディング創業</p>
+			  <p>酒造業管理システム「酒仙Ver.1」開発・リリース</p>
+			  <p>酒卸業管理システム「ひょうたん」開発・リリース</p>
+			  <p>統合販売管理システム「六芸名人」開発・リリース</p>
+           </div>
+　       </div>
+　     </div>
+    <!-- ここまで　panel-default -->
+	<!-- ここから -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="text-center"><a data-toggle="collapse" data-parent="#accordion" href="#collapse2">1993年</a></h4>
+      </div>
+	  <div id="collapse2" class="panel-collapse collapse">
+		  <div class="panel-body">
+			<!-- ここから -->
+			  <p>有限会社ソフトランディング設立<br>（資本金300万円）</p>
+			  <p>DXF、NC変換システム「変換名人」開発・リリース</p>
+           </div>
+　       </div>
+　     </div>
+    <!-- ここまで　panel-default -->
+   <!-- ここから -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="text-center"><a data-toggle="collapse" data-parent="#accordion" href="#collapse3">1995年</a></h4>
+      </div>
+	  <div id="collapse3" class="panel-collapse collapse">
+		  <div class="panel-body">
+			<!-- ここから -->
+			  <p>酒小売業管理システム「ひょうたんJr.」リリース</p>
+			  <p>「酒仙Ver.2」販売管理・蔵内管理システムリリース</p>
+           </div>
+　       </div>
+　     </div>
+    <!-- ここまで　panel-default -->
+	<!-- ここから -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="text-center"><a data-toggle="collapse" data-parent="#accordion" href="#collapse4">1996年</a></h4>
+      </div>
+	  <div id="collapse4" class="panel-collapse collapse">
+		  <div class="panel-body">
+			<!-- ここから -->
+			  <p>株式会社ティー・エス・アイに社名変更</p>
+			  <p>「酒仙Ver.2EX」販売管理・蔵内管理システムリリース</p> 
+			　<p>「酒仙Ver.3」販売管理・蔵内管理システムリリース</p>
+           </div>
+　       </div>
+　     </div>
+    <!-- ここまで　panel-default -->
+	<!-- ここから -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="text-center"><a data-toggle="collapse" data-parent="#accordion" href="#collapse5">1997年</a></h4>
+      </div>
+	  <div id="collapse5" class="panel-collapse collapse">
+		  <div class="panel-body">
+			<!-- ここから -->
+			  <p>「酒仙Ver3EX」販売管理・蔵内管理システムリリース</p>
+           </div>
+　       </div>
+　     </div>
+    <!-- ここまで　panel-default -->
+	<!-- ここから -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="text-center"><a data-toggle="collapse" data-parent="#accordion" href="#collapse6">1999年</a></h4>
+      </div>
+	  <div id="collapse6" class="panel-collapse collapse">
+		  <div class="panel-body">
+			<!-- ここから -->
+			  <p>東京営業所 開設</p>
+           </div>
+　       </div>
+　     </div>
+    <!-- ここまで　panel-default -->
+	<!-- ここから -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="text-center"><a data-toggle="collapse" data-parent="#accordion" href="#collapse7">2000年</a></h4>
+      </div>
+	  <div id="collapse7" class="panel-collapse collapse">
+		  <div class="panel-body">
+			<!-- ここから -->
+			  <p>「酒仙Ver.5」販売管理・蔵内管理システムリリース</p>
+			  <p>「酒仙ソリューション21」スタート</p>
+           </div>
+　       </div>
+　     </div>
+    <!-- ここまで　panel-default -->
+	<!-- ここから -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="text-center"><a data-toggle="collapse" data-parent="#accordion" href="#collapse8">2002年</a></h4>
+      </div>
+	  <div id="collapse8" class="panel-collapse collapse">
+		  <div class="panel-body">
+			<!-- ここから -->
+			  <p>「酒仙Ver.5EX」販売管理・蔵内管理システムリリース</p>
+           </div>
+　       </div>
+　     </div>
+    <!-- ここまで　panel-default -->
+	<!-- ここから -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="text-center"><a data-toggle="collapse" data-parent="#accordion" href="#collapse9">2005年</a></h4>
+      </div>
+	  <div id="collapse9" class="panel-collapse collapse">
+		  <div class="panel-body">
+			<!-- ここから -->
+			  <p>「TSIソリューション21forWeb」スタート</p>
+           </div>
+　       </div>
+　     </div>
+    <!-- ここまで　panel-default -->
+	<!-- ここから -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="text-center"><a data-toggle="collapse" data-parent="#accordion" href="#collapse10">2007年</a></h4>
+      </div>
+	  <div id="collapse10" class="panel-collapse collapse">
+		  <div class="panel-body">
+			<!-- ここから -->
+			  <p>「酒仙Ver.5EXプラス」販売管理・蔵内管理システムリリース</p>
+				<p>ECサイト構築支援システム「酒Ｑ」リリース</p>
+           </div>
+　       </div>
+　     </div>
+    <!-- ここまで　panel-default -->
+	<!-- ここから -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="text-center"><a data-toggle="collapse" data-parent="#accordion" href="#collapse11">2009年</a></h4>
+      </div>
+	  <div id="collapse11" class="panel-collapse collapse">
+		  <div class="panel-body">
+			<!-- ここから -->
+			　<p>金沢市に本社移転</p>
+			  <p>ECサイト構築支援システム「酒ＱVer.2」リリース</p>
+           </div>
+　       </div>
+　     </div>
+    <!-- ここまで　panel-default -->
+	<!-- ここから -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="text-center"><a data-toggle="collapse" data-parent="#accordion" href="#collapse12">2010年</a></h4>
+      </div>
+	  <div id="collapse12" class="panel-collapse collapse">
+		  <div class="panel-body">
+			<!-- ここから -->
+			  <p>「酒仙Ver.6」販売管理・蔵内管理システムリリース</p>
+           </div>
+　       </div>
+　     </div>
+    <!-- ここまで　panel-default -->
+	<!-- ここから -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="text-center"><a data-toggle="collapse" data-parent="#accordion" href="#collapse13">2011年</a></h4>
+      </div>
+	  <div id="collapse13" class="panel-collapse collapse">
+		  <div class="panel-body">
+			<!-- ここから -->
+			  <p>「酒仙Ver.6プラス」販売管理・蔵内管理システムリリース</p>
+			  <p>ECサイト構築支援システム「酒Ｑi」リリース</p>
+           </div>
+　       </div>
+　     </div>
+    <!-- ここまで　panel-default -->
+	<!-- ここから -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="text-center"><a data-toggle="collapse" data-parent="#accordion" href="#collapse14">2013年</a></h4>
+      </div>
+	  <div id="collapse14" class="panel-collapse collapse">
+		  <div class="panel-body">
+			<!-- ここから -->
+			  <p>港区虎ノ門に東京営業所移転</p>
+           </div>
+　       </div>
+　     </div>
+    <!-- ここまで　panel-default -->
+	<!-- ここから -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="text-center"><a data-toggle="collapse" data-parent="#accordion" href="#collapse15">2014年</a></h4>
+      </div>
+	  <div id="collapse15" class="panel-collapse collapse">
+		  <div class="panel-body">
+			<!-- ここから -->
+			  <p>「酒仙 i 」販売管理・蔵内管理システムリリース</p> 
+			  <p>財団法人北國銀行産業振興財団より表彰</p>
+           </div>
+　       </div>
+　     </div>
+    <!-- ここまで　panel-default -->
+	<!-- ここから -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="text-center"><a data-toggle="collapse" data-parent="#accordion" href="#collapse16">2015年</a></h4>
+      </div>
+	  <div id="collapse16" class="panel-collapse collapse">
+		  <div class="panel-body">
+			<!-- ここから -->
+			  <p>本社新社屋完成・移転</p>
+				<p>「酒仙 i 」が「生産性向上設備投資促進税制」の対象となる
+				先端設備（ソフトウェア）として認定</p>
+           </div>
+　       </div>
+　     </div>
+    <!-- ここまで　panel-default -->
+	<!-- ここから -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="text-center"><a data-toggle="collapse" data-parent="#accordion" href="#collapse17">2016年</a></h4>
+      </div>
+	  <div id="collapse17" class="panel-collapse collapse">
+		  <div class="panel-body">
+			<!-- ここから -->
+			  <p>港区芝に東京営業所移転</p>
+			  <p>「酒仙 i プラス」販売管理・蔵内管理システムリリース</p>
+			  <p>｢ISO/IEC 27001:2013」の認証を取得</p>
+		      <p>平成28年度プレミアム石川ブランド製品　認定</p>
+           </div>
+　       </div>
+　     </div>
+    <!-- ここまで　panel-default -->
+ </div>
+</div>
+  <!-- フッター -->
+  <div class="flort_ms sp-only">
+    <div class="row row-0">
+      <div class="col-xs-6 bg_seishu"><a href="s_kurauchi.html">清酒・焼酎・他</a></div>
+      <div class="col-xs-6 bg_wine"><a href="p_wine.html">ワイン（果実酒）</a></div>
+      <div class="col-xs-6 bg_beer"><a href="p_beer.html">地ビール</a></div>
+      <div class="col-xs-6 bg_sakeq"><a href="p_ec.html">EC構築</a></div>
+      <div class="col-xs-6 bg_news"><a href="news.html">新着情報</a></div>
+      <div class="col-xs-6 bg_FB"><a href="https://www.facebook.com/TSI-1690253877865115/" target="_blank">FaceBook</a></div>
+    </div>
+  </div>
+  <div class="footer-menu sp-only">
+    <li><a href="policy.html">情報セキュリティ基本方針</a></li>
+    <li><a href="sitemap.html">サイトマップ</a></li>
+    <li><a href="privacy_policy.html">個人情報保護方針</a></li>
+  </div>
+</div>
+<!-- TemplateEndEditable -->
+<footer>
+  <ul class="list-inline text-center">
+    <li><a href="policy.html">情報セキュリティ基本方針</a></li>
+    <li><a href="sitemap.html">サイトマップ</a></li>
+    <li><a href="privacy_policy.html">個人情報保護方針</a></li>
+  </ul>
+  <div class="f_l"> <img src="img/logo.png">
+    <p>Copyright © TSI Co,.Ltd All Rights Reserved</p>
+  </div>
+</footer>
+<!-- フロートメニュー　-->
+<div id="floatMenu" class="pc-only">
+  <ul id="nav2">
+    <li><a class="seishu" href="s_kurauchi.html"><span>清酒・焼酎・他</span></a></li>
+  </ul>
+  <ul id="nav2_w">
+    <li><a class="wine" href="p_wine.html"><span>ワイン（果実酒）</span></a></li>
+  </ul>
+  <ul id="nav2_b">
+    <li><a class="beer" href="p_beer.html"><span>地ビール</span></a></li>
+  </ul>
+  <ul id="nav2_q">
+    <li><a class="sakeq" href="p_ec.html"><span>EC構築</span></a></li>
+  </ul>
+  <ul id="nav2_c_n">
+    <li><a class="contact_n" href="contact.html"><span>お問い合わせ</span></a></li>
+  </ul>
+  <ul id="nav2_n_n">
+    <li><a class="news_n" href="news.html"><span>新着情報</span></a></li>
+  </ul>
+  <ul id="nav2_f">
+    <li class="Facebook_blue"><a class="facebook" href="https://www.facebook.com/TSI-1690253877865115/" target="_blank"><span>FACEBOOK</span></a></li>
+  </ul>
+</div>
+<script src="js/floatMenu.js"></script>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="widtd=device-widtd, initial-scale=1">
+<title>Bootstrap Sample</title>
+<!-- BootstrapのCSS読み込み -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/common.css" rel="stylesheet">
+<link href="css/recruit.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet">
+<link href="css/hover-min.css" rel="stylesheet">
+<!-- jQuery読み込み -->
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
+<script src="js/jquery.dimensions.js"></script>
+<script src="js/wow.js"></script>
+<script>
+new WOW().init();
+</script>
+<!-- BootstrapのJS読み込み -->
+<script src="js/bootstrap.min.js"></script>
+<!--　nav2 -->
+<script type="text/javascript">
+    var name = "#floatMenu";
+    var menuYloc = null;
+     
+        $(document).ready(function(){
+            menuYloc = parseInt($(name).css("top").substring(0,$(name).css("top").indexOf("px")))
+            $(window).scroll(function () { 
+                offset = menuYloc+$(window).scrollTop()+"px";
+                $(name).animate({top:offset},{duration:900,queue:false});
+            });
+        }); 
+</script>
+</head>
+<body>
+<header>
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+<img src="img/logo.png" class="m_r">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#gnavi"> <span class="sr-only">メニュー</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+<div id="gnavi" class="collapse navbar-collapse">
+<ul class="gnav list-inline pc-only">
+  <li class="current"><a href="index.html" data-hover="HOME">HOME</a></li>
+  <li><a href="company.html" data-hover="会社案内">会社案内</a></li>
+  <li><a href="product.html" data-hover="製品案内">製品案内</a></li>
+  <li><a href="performance.html" data-hover="導入実績">導入実績</a></li>
+  <li><a href="partner.html" data-hover="パートナー">パートナー</a></li>
+  <li><a href="recruit.html" data-hover="採用情報">採用情報</a></li>
+  <li><a href="contact.html" data-hover="お問い合わせ">お問い合わせ</a></li>
+</ul>
+<ul class="gnav sp-only">
+  <p><a href="index.html" data-hover="HOME">HOME</a></p>
+  <p><a href="company.html" data-hover="会社案内">会社案内</a></p>
+  <p><a href="product.html" data-hover="製品案内">製品案内</a></p>
+  <p><a href="performance.html" data-hover="導入実績">導入実績</a></p>
+  <p><a href="partner.html" data-hover="パートナー">パートナー</a></p>
+  <p><a href="recruit.html" data-hover="採用情報">採用情報</a></p>
+  <p><a href="contact.html" data-hover="お問い合わせ">お問い合わせ</a></p>
+</ul>
+</nav>
+</header>
+<div class="container">
+  <div class="rinen">
+    <h1 class="h2">新着情報</h1>
+  </div>
+  <div class="row row-20">
+    <div class="col-sm-12 col-md-2">
+      <div class="list-group"> 
+	  <a href="#" class="list-group-item">2017年<span class="badge">5</span></a> 
+	  <!-- 
+	  <a href="2016_news.html" class="list-group-item">2016年<span class="badge">23</span></a>
+	  <a href="2015_news.html" class="list-group-item">2015年<span class="badge">745</span></a>
+	  -->
+	  </div>
+    </div>
+    <div class="col-sm-12 col-md-10">
+      <!-- ここから -->
+      <div class="panel panel-default">
+        <div class="panel-heading">2017年5月18日<span class="label label-danger">NEW</span><br>
+          「地ビール管理システム」がIT導入補助金対象のITツールとして認定されました。</div>
+        <div class="panel-body"> 平素は格別のご愛顧を賜り厚くお礼申し上げます。<br>
+          この度、「酒仙i地ビール管理システム」がIT導入補助金対象のITツールとして認定されました。 </div>
+      </div>
+      <!-- ここまで　-->
+      <!-- ここから -->
+      <div class="panel panel-default">
+        <div class="panel-heading">2017年4月25日<br>
+          GW休業に関して</div>
+        <div class="panel-body"> 平素は格別のご愛顧を賜り厚くお礼申し上げます。<br>
+          さて、誠に勝手ではございますが、弊社では５/３～５/７迄GW休業とさせていただきます。 <br>
+          <br>
+          皆様にはご不便をおかけしますが、何卒ご了承の程宜しくお願い申し上げます。 <br>
+          ※休業中にいただきましたご注文やお問い合わせにつきましては
+          休業日明け以降順次対応させていただきます。 </div>
+      </div>
+      <!-- ここまで　-->
+      <!-- ここから -->
+      <div class="panel panel-default">
+        <div class="panel-heading">2017年2月1日<br>
+          【経済産業省IT導入補助金】IT導入支援事業者採択のお知らせ</div>
+        <div class="panel-body">平素は格別のご愛顧を賜り厚くお礼申し上げます。<br>
+          この度、弊社は、2017年1月27日にIT導入補助金の<br>
+          「平成28年度補正 サービス等生産性向上IT導入支援事業」<br>
+          IT導入支援事業者として採択を受けました。<br>
+          <br>
+          本事業は、国際的な経済社会情勢の変化に対応し、足腰の強い経済を構築するため、<br>
+          自社の置かれた環境から強み・弱みを認識、分析し、生産性の向上に資する要素として<br>
+          「ITの利活用」を設定した上で、こうしたITツール（ソフトウエア、サービス等）を導入しようとする事業者に対して、
+          その事業費等の経費の一部を補助することにより、<br>
+          中小企業・小規模事業者等の経営力向上を図ることを目的としたものです。<br>
+          <br>
+          弊社提供のサービスで対象となるITシステム・サービスに関しては、<br>
+          補助金の対象になる場合がございます。 <br>
+          <br>
+          詳細はお問い合わせください。</div>
+      </div>
+      <!-- ここまで　-->
+      <!-- ここから -->
+      <div class="panel panel-default">
+        <div class="panel-heading">2017年1月21日<br>
+          製販一体型「酒仙i 地ビール管理システム」リリースのお知らせ </div>
+        <div class="panel-body">平素は格別のご愛顧を賜り厚くお礼申し上げます。<br>
+          この度、弊社は、2017年1月21日に<br>
+          製販一体型「酒仙i 地ビール管理システム」をリリースいたしました。 <br>
+          <br>
+          近年の地ビール事業者の成長は、消費者とより近い距離感を生み出すなど<br>
+          地域との関わりを密接なものにしてきました。<br>
+          <br>
+          一方で、製造から販売に至るまで、製販一体型スタイルも確立してきました。<br>
+          この度、TSIでは業界の活性化支援と現場の声に対応した戦略システム<br>
+          「酒仙i 地ビール管理システム」を新たに誕生させました。<br>
+          <br>
+          是非、ご検討くださいますようお願い申し上げます。 </div>
+      </div>
+      <!-- ここまで　-->
+      <div class="panel panel-default">
+        <div class="panel-heading">2017年1月5日><br>
+          年始のご挨拶</div>
+        <div class="panel-body">新年明けましておめでとうございます。<br>
+          謹んで新年のご祝詞を申し上げます。旧年中はひとかたならぬご愛顧を賜り、厚く御礼申し上げます。<br>
+          さて、弊社は、本年4月17日をもちまして創業25周年を迎えることになります。<br>
+          これもひとえにお客様をはじめ、ビジネスパートナーの皆様に支えていただいたお蔭と心より感謝を申し上げます。 <br>
+          <br>
+          昨今の国内外では、時代の転換期とも言うべき予期せぬ変革が起こっています。<br>
+          これは新たな時代への幕開けを意味するものでしょうか。<br>
+          弊社といたしましては、この時代背景を踏まえ、まずは情報セキュリティISO27001の取組みを軸に、<br>
+          お客様やビジネスパートナー様との信頼関係を更に確立させ強固なものに築き上げることを使命として<br>
+          まいりたいと考えています。<br>
+          また、製品開発におきましては、IoT、ICTへの取り組みにチャレンジすべく現場・現認・現物主義を貫いてまいります。<br>
+          <br>
+          このように、今後も皆様のご期待に沿えるよう、いま一度原点に立ち戻り、社員一同より一層の努力を重ねる所存でございます。<br>
+          25周年を迎え、新たなステージに踏み出すティー・エス・アイのこれからにご期待いただけたらと存じます。<br>
+          <br>
+          最後になりましたが、本年も皆様のご多幸を心よりお祈り申し上げますとともに、旧年に増してのご指導ご鞭撻を
+          お願い申し上げます。<br>
+          <p class="text-right">敬具<br>
+            2017年1月5日<br>
+            株式会社ティー・エス・アイ<br>
+            代表取締役　寺良彦</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- フッター -->
+<div class="flort_ms sp-only">
+  <div class="row row-0">
+    <div class="col-xs-6 bg_seishu"><a href="s_kurauchi.html">清酒・焼酎・他</a></div>
+    <div class="col-xs-6 bg_wine"><a href="p_wine.html">ワイン（果実酒）</a></div>
+    <div class="col-xs-6 bg_beer"><a href="p_beer.html">地ビール</a></div>
+    <div class="col-xs-6 bg_sakeq"><a href="p_ec.html">EC構築</a></div>
+    <div class="col-xs-6 bg_news"><a href="news.html">新着情報</a></div>
+    <div class="col-xs-6 bg_FB"><a href="https://www.facebook.com/TSI-1690253877865115/" target="_blank">FaceBook</a></div>
+  </div>
+</div>
+<div class="footer-menu sp-only">
+  <li><a href="policy.html">情報セキュリティ基本方針</a></li>
+  <li><a href="sitemap.html">サイトマップ</a></li>
+  <li><a href="privacy_policy.html">個人情報保護方針</a></li>
+</div>
+<!-- TemplateEndEditable -->
+<footer>
+  <ul class="list-inline text-center">
+    <li><a href="policy.html">情報セキュリティ基本方針</a></li>
+    <li><a href="sitemap.html">サイトマップ</a></li>
+    <li><a href="privacy_policy.html">個人情報保護方針</a></li>
+  </ul>
+  <div class="f_l"> <img src="img/logo.png">
+    <p>Copyright © TSI Co,.Ltd All Rights Reserved</p>
+  </div>
+</footer>
+<!-- フロートメニュー　-->
+<div id="floatMenu" class="pc-only">
+  <ul id="nav2">
+    <li><a class="seishu" href="s_kurauchi.html"><span>清酒・焼酎・他</span></a></li>
+  </ul>
+  <ul id="nav2_w">
+    <li><a class="wine" href="p_wine.html"><span>ワイン（果実酒）</span></a></li>
+  </ul>
+  <ul id="nav2_b">
+    <li><a class="beer" href="p_beer.html"><span>地ビール</span></a></li>
+  </ul>
+  <ul id="nav2_q">
+    <li><a class="sakeq" href="p_ec.html"><span>EC構築</span></a></li>
+  </ul>
+  <ul id="nav2_c_n">
+    <li><a class="contact_n" href="contact.html"><span>お問い合わせ</span></a></li>
+  </ul>
+  <ul id="nav2_n_n">
+    <li><a class="news_n" href="news.html"><span>新着情報</span></a></li>
+  </ul>
+  <ul id="nav2_f">
+    <li class="Facebook_blue"><a class="facebook" href="https://www.facebook.com/TSI-1690253877865115/" target="_blank"><span>FACEBOOK</span></a></li>
+  </ul>
+</div>
+<script src="js/floatMenu.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap Sample</title>
+<!-- BootstrapのCSS読み込み -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/common.css" rel="stylesheet">
+<link href="css/index.css" rel="stylesheet">
+<!-- jQuery読み込み -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/jquery.responsiveTabs.js"></script>
+<!-- BootstrapのJS読み込み -->
+<script src="js/bootstrap.min.js"></script>
+<script>
+$(function(){
+    $('#news_contents div[id != "tab1"]').hide();
+     
+    // タブをクリックすると
+    $("a").click(function(){
+        // 一度全てのコンテンツを非表示にする
+        $("#news_contents div").hide();
+ 
+        // 次に選択されたコンテンツを再表示する
+        $($(this).attr("href")).show();
+         
+        // 現在のcurrentクラスを削除
+        $(".current").removeClass("current");
+         
+        // 選択されたタブ（自分自身）にcurrentクラスを追加
+        $(this).addClass("current");
+ 
+         
+        return false;
+    });
+ 
+});
+</script>
+
+</head>
+<body>
+
+<div class="container">
+
+<header>
+  <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <ul class="gnav list-inline">
+      <li class="current"><a href="#" data-hover="会社案内">会社案内</a></li>
+      <li><a href="#" data-hover="製品案内">製品案内</a></li>
+      <li><a href="#" data-hover="導入実績">導入実績</a></li>
+      <li><a href="#" data-hover="パートナー">パートナー</a></li>
+      <li><a href="#" data-hover="採用情報">採用情報</a></li>
+    </ul>
+  </nav>
+</header>
+<div id="carousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+  <!-- 任意のID指定。クラスとデータ属性の指定。 -->
+  <div id="carousel" class="carousel slide" data-ride="carousel">
+    <!-- インジケーターの設置。下部の○●ボタン。 -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel" data-slide-to="1"></li>
+      <li data-target="#carousel" data-slide-to="2"></li>
+    </ol>
+    <!-- スライドの内容 -->
+    <div class="carousel-inner">
+      <div class="item active"> <img src="img/main_img.png" alt="">
+        <!-- 画像の下に入れる -->
+        <div class="carousel-caption">
+          <h4>キャプションタイトル</h4>
+          キャプションテキスト </div>
+      	</div>
+      <div class="item"> <img src="img/main_img.png" alt="">
+        <!-- 画像の下に入れる -->
+        <div class="carousel-caption">
+          <h4>キャプションタイトル</h4>
+          キャプションテキスト2 </div>
+      	</div>
+      <div class="item"> <img src="img/main_img.png" alt="">
+        <!-- 画像の下に入れる -->
+        <div class="carousel-caption">
+          <h4>キャプションタイトル</h4>
+          キャプションテキスト3 </div>
+      	</div>
+	   </div>
+   	</div>
+  </div>
+
+
+<div class="news">
+<ul>
+    <li><a href="#tab1" class="current">新着情報</a></li>
+    <li><a href="#tab2" class="">会社ブログ</a></li>
+  </ul>
+  <div id="news_contents">
+    <div id="tab1">
+      <div class="list-group">
+	 
+	</div>
+    </div>
+    <div id="tab2">
+      <p><strong>36・38・40</strong></p>
+      <p></p>
+    </div>
+   </div>
+</div>
+
+
+
+</div>
+
+
+

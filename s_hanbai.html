@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap Sample</title>
+<!-- BootstrapのCSS読み込み -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/common.css" rel="stylesheet">
+<link href="css/product.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet">
+<link href="css/hover-min.css" rel="stylesheet">
+<!-- jQuery読み込み -->
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
+<script src="js/jquery.dimensions.js"></script>
+<script src="js/wow.js"></script>
+<!-- BootstrapのJS読み込み -->
+<script src="js/bootstrap.min.js"></script>
+<!--　nav2 -->
+<script type="text/javascript">
+    var name = "#floatMenu";
+    var menuYloc = null;
+     
+        $(document).ready(function(){
+            menuYloc = parseInt($(name).css("top").substring(0,$(name).css("top").indexOf("px")))
+            $(window).scroll(function () { 
+                offset = menuYloc+$(window).scrollTop()+"px";
+                $(name).animate({top:offset},{duration:900,queue:false});
+            });
+        }); 
+</script>
+</head>
+<body>
+<header>
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+<img src="img/logo.png" class="m_r">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#gnavi"> <span class="sr-only">メニュー</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+<div id="gnavi" class="collapse navbar-collapse">
+  <ul class="gnav list-inline pc-only">
+    <li class="current"><a href="index.html" data-hover="HOME">HOME</a></li>
+    <li><a href="company.html" data-hover="会社案内">会社案内</a></li>
+    <li><a href="product.html" data-hover="製品案内">製品案内</a></li>
+    <li><a href="performance.html" data-hover="導入実績">導入実績</a></li>
+    <li><a href="partner.html" data-hover="パートナー">パートナー</a></li>
+    <li><a href="recruit.html" data-hover="採用情報">採用情報</a></li>
+    <li><a href="contact.html" data-hover="お問い合わせ">お問い合わせ</a></li>
+  </ul>
+  <ul class="gnav sp-only">
+    <p><a href="index.html" data-hover="HOME">HOME</a></p>
+    <p><a href="company.html" data-hover="会社案内">会社案内</a></p>
+    <p><a href="product.html" data-hover="製品案内">製品案内</a></p>
+    <p><a href="performance.html" data-hover="導入実績">導入実績</a></p>
+    <p><a href="partner.html" data-hover="パートナー">パートナー</a></p>
+    <p><a href="recruit.html" data-hover="採用情報">採用情報</a></p>
+    <p><a href="contact.html" data-hover="お問い合わせ">お問い合わせ</a></p>
+  </ul>
+  </nav>
+  </header>
+  <!--
+<div class="sub_img">
+  <div class="jumbotron">
+    <div class="container">
+      <h2>会社案内</h2>
+      <p>Company Information</p>
+    </div>
+  </div>
+</div>
+-->
+  <!-- パンくずリスト　-->
+  <div class="container">
+    <div class="product">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="hanbai_sub">
+            <h1 class="h2">酒仙i 販売管理</h1>
+            <p class="text-left">酒税への対応など煩雑になりがちな酒造業の日常業務をシンプルに。<br>
+              リアルタイムで正確な情報取得・分析機能を貴社の経営戦略にぜひお役立てください。<br>
+            </p>
+            <p class="text-center"> <a class="btn btn-kurauchi btn-lg" href="s_kurauchi.html" role="button"><span>蔵内(清酒・他)</span></a></p>
+			<p class="text-center"> <a class="btn btn-wine btn-lg" href="p_wine.html" role="button"><span>蔵内(ワイン)</span></a></p>
+			<p class="text-center"> <a class="btn btn-beer btn-lg" href="p_beer.html" role="button"><span>蔵内(地ビール)</span></a></p>
+          </div>
+        </div>
+        <!--　ここから　-->
+        <div class="col-xs-12 col-md-6"></div>
+        <div class="col-xs-12 col-md-6"> </div>
+      </div>
+      <!--　ここまで　-->
+    </div>
+    <div class="special">
+      <h1 class="h2">販売管理の特徴</h1>
+      <!-- アコーディオングループ -->
+      <div class="panel-group" id="accordion">
+        <!-- ストレスを感じさせない操作性 -->
+        <div class="panel panel-accordion"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse_1">
+          <div class="panel-heading panel-hanbai">
+            <h4 class="panel-title"> ストレスを感じさせない操作性
+              <div class="pull-right"> <span class="glyphicon glyphicon-chevron-right"></span> </div>
+            </h4>
+          </div>
+          </a>
+          <div id="collapse_1" class="panel-collapse collapse fade">
+            <div class="panel-body">
+              <div class="col-xs-12 col-md-6"> <img src="img/01.jpg" class="img-responsive"> </div>
+              <div class="col-xs-12 col-md-6">
+                <p class="text-left">酒税への対応など煩雑になりがちな酒造業の日常業務をシンプルに。<br>
+				リアルタイムで正確な情報取得・分析機能を貴社の経営戦略にぜひお役立てください。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 生産計画シミュレーション -->
+        <div class="panel panel-accordion"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse_2">
+          <div class="panel-heading panel-hanbai">
+            <h4 class="panel-title">生産計画シミュレーション
+              <div class="pull-right"> <span class="glyphicon"></span> </div>
+            </h4>
+          </div>
+          </a>
+          <div id="collapse_2" class="panel-collapse collapse fade">
+            <div class="panel-body"> 販売計画、需要予測などに基づき、原酒分類ごとの生産数量の決定や、仕込ごとの原料数量・製造見込数量から仕込本数などの決定、シミュレーションを繰り返しながら生産計画が決定されます。<br>
+              また、仕込期間中の変更・修正にも柔軟に対応できます。<br>
+              決定された生産計画にて仕込配合・大日程を決定し仕込予定表を作成します。<br>
+              仕込日程時の原料払出日程や原料仕入計画も決定できます。 </div>
+          </div>
+        </div>
+        <!-- 正確な原価把握 -->
+        <div class="panel panel-accordion"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse_3">
+          <div class="panel-heading panel-hanbai">
+            <h4 class="panel-title"> 正確な原価把握
+              <div class="pull-right"> <span class="glyphicon"></span> </div>
+            </h4>
+          </div>
+          </a>
+          <div id="collapse_3" class="panel-collapse collapse fade">
+            <div class="panel-body"> 「酒仙 i 」に保存されたデータを集計し、原価算出を行います。<br>
+              算出された原価と売上実績を基に、各商品や得意先ごとの粗利管理まで原価に関する一連の作業をトータル的にサポートします。</div>
+          </div>
+        </div>
+        <!-- もろみ管理 -->
+        <div class="panel panel-accordion"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse_4">
+          <div class="panel-heading panel-hanbai">
+            <h4 class="panel-title">もろみ管理
+              <div class="pull-right"> <span class="glyphicon"></span> </div>
+            </h4>
+          </div>
+          </a>
+          <div id="collapse_4" class="panel-collapse collapse fade">
+            <div class="panel-body"> 日々のもろみ分析値を入力することで、もろみ経過簿・BMD曲線・A-B直線の作成が可能です。<br>
+              過去の経過簿を呼び出すことにより、現在との比較対比ができます。</div>
+          </div>
+        </div>
+        <!-- トレーサビリティ機能 -->
+        <div class="panel panel-accordion"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse_5">
+          <div class="panel-heading panel-hanbai">
+            <h4 class="panel-title">トレーサビリティ機能
+              <div class="pull-right"> <span class="glyphicon"></span> </div>
+            </h4>
+          </div>
+          </a>
+          <div id="collapse_5" class="panel-collapse collapse fade">
+            <div class="panel-body"> 消費者の“食”に対する関心が高まっている中で、特に品質管理が重要視されています。<br>
+              「酒仙 i 」のトレーサビリティは、すべての工程作業をＩＤ（製造番号）管理し、履歴情報の一元化により、 原材料トレース（トレースフォワード）と製品トレース（トレースバック）の双方向からの履歴追跡を可能にします。</div>
+          </div>
+        </div>
+        <!-- クラウド対応 -->
+        <div class="panel panel-accordion"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse_6">
+          <div class="panel-heading panel-hanbai">
+            <h4 class="panel-title">クラウド対応
+              <div class="pull-right"> <span class="glyphicon"></span> </div>
+            </h4>
+          </div>
+          </a>
+          <div id="collapse_6" class="panel-collapse collapse fade">
+            <div class="panel-body"> 酒仙iクラウドサービスでは､Citrix社製を使用することで、モバイルサービスが 提供可能となり、軽量化、省スペース化等の卓越したパフォーマンスを実現できます。<br>
+              また、Windowsサーバーを仮想化･一元管理することで、運用コスト等を確実に 削減できます。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="special">
+      <h1 class="h2">帳簿一覧</h1>
+      <table class="light-col">
+        <tr>
+          <th>管理名</th>
+          <th colspan="3">出力帳簿</th>
+        </tr>
+        <tr>
+          <th class="gray" rowspan="5">売上管理</th>
+          <td>受注管理チェックリスト</td>
+          <td>受注残高一覧表 <br>
+            (得意先別・商品別) </td>
+          <td>売上管理チェックリスト</td>
+        </tr>
+        <tr>
+          <td>納品書 <br>
+            (ドットPR・レーザーPR)</td>
+          <td>送り状 <br>
+            (伝票計上・マスタ指定) </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>出荷指示書</td>
+          <td>ピッキングリスト</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>担当別売上日報</td>
+          <td>得意先別売上日報</td>
+          <td>商品別売上日報</td>
+        </tr>
+        <tr>
+          <td>担当得意先別売上日報</td>
+          <td>得意先商品別売上日報</td>
+          <td>商品得意先別売上日報</td>
+        </tr>
+        <tr>
+          <th rowspan="3">売掛管理</th>
+          <td>請求明細書 <br>
+            (ドットPR・レーザーPR)</td>
+          <td>リベート計算明細書</td>
+          <td>請求一覧表</td>
+        </tr>
+        <tr>
+          <td>回収予定表</td>
+          <td>売掛金元帳</td>
+          <td>売掛金残高一覧表</td>
+        </tr>
+        <tr>
+          <td>入金チェックリスト</td>
+          <td>回収管理表</td>
+          <td>手形一覧表</td>
+        </tr>
+        <tr>
+          <th>仕入管理</th>
+          <td>移入チェックリスト</td>
+          <td>仕入管理チェックリスト</td>
+          <td></td>
+        </tr>
+        <tr>
+          <th rowspan="2">買掛管理</th>
+          <td>支払一覧表</td>
+          <td>支払予定表</td>
+          <td>支払チェックリスト</td>
+        </tr>
+        <tr>
+          <td>買掛金元帳</td>
+          <td>買掛金残高一覧表</td>
+          <td></td>
+        </tr>
+        <tr>
+          <th rowspan="4">在庫管理</th>
+          <td>在庫管理チェックリスト</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>在庫一覧表</td>
+          <td>在庫管理表(実数)</td>
+          <td>在庫管理表(換算)</td>
+        </tr>
+        <tr>
+          <td>商品受払日計表</td>
+          <td>商品受払表</td>
+          <td>棚卸表</td>
+        </tr>
+        <tr>
+          <td>ロット番号別在庫一覧表</td>
+          <td>ロット番号別受払表</td>
+          <td></td>
+        </tr>
+        <tr>
+          <th rowspan="4">統計資料 <br>
+            （商品）</th>
+          <td>商品別売上月報</td>
+          <td>商品ランキング表</td>
+          <td>商品得意先別売上集計表</td>
+        </tr>
+        <tr>
+          <td>商品得意先別売上推移表</td>
+          <td>商品売上推移表</td>
+          <td>商品売上管理表</td>
+        </tr>
+        <tr>
+          <td>商品粗利管理表</td>
+          <td>製成別売上管理表</td>
+          <td>取引区分一覧表</td>
+        </tr>
+        <tr>
+          <td>自由設定帳票</td>
+          <td>テキスト出力</td>
+          <td></td>
+        </tr>
+        <tr>
+          <th rowspan="4">統計資料 <br>
+            (得意先)</th>
+          <td>担当別売上月報</td>
+          <td>得意先別売上月報</td>
+          <td>得意先ランキング表</td>
+        </tr>
+        <tr>
+          <td>得意先商品別売上集計表 </td>
+          <td>得意先商品別売上推移表</td>
+          <td>得意先売上推移表</td>
+        </tr>
+        <tr>
+          <td>得意先別売上管理表</td>
+          <td>担当商品別売上管理表</td>
+          <td>担当製成別管理表</td>
+        </tr>
+        <tr>
+          <td>得意先粗利管理表</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th rowspan="4">税務資料</th>
+          <td>税額計算明細書</td>
+          <td>税額算出表</td>
+          <td>業態地区別酒類移出集計表</td>
+        </tr>
+        <tr>
+          <td>地区業態別酒類移出集計表</td>
+          <td>酒類移出簿</td>
+          <td>酒類移出内訳簿</td>
+        </tr>
+        <tr>
+          <td>移出明細表</td>
+          <td>移出内訳表</td>
+          <td>詰口酒類容器別受払帳</td>
+        </tr>
+        <tr>
+          <td>移出帳</td>
+          <td colspan="2">酒類販売数量等報告書※卸・小売オプション版</td>
+        </tr>
+      </table>
+    </div>
+    <div class="kurauchi_bana text-right">
+      <div class="row">
+        <div class="col-sm-12">
+          <h3>蔵内管理の詳細はこちら</h3>
+          <p> <a class="btn btn-kurauchi btn-lg" href="#" role="button"><span>詳細を見る</span></a> </p>
+        </div>
+      </div>
+    </div>
+	
+	<div class="row product_list">
+      <div class="col-sm-12 col-md-4"> 
+	  	<a href="p_wine.html"><img src="img/wine_illu.png" class="img-responsive img-circle"></a>
+	  </div>
+      <div class="col-sm-12 col-md-4">
+	    <a href="p_beer.html"><img src="img/beer_illu.png" class="img-responsive img-circle"></a>
+	  </div>
+      <div class="col-sm-12 col-md-4">
+	    <a href="p_ec.html"><img src="img/ec_illu.png" class="img-responsive img-circle"></a>
+	  </div>
+    </div>
+	
+    <div class="info text-right">
+      <div class="row">
+        <div class="col-sm-12">
+          <h3>お電話でのお問い合わせはこちら</h3>
+          <ul class="list-inline">
+            <li>金沢本社<br>
+              076-267-7566</li>
+            <li>東京営業所<br>
+              03-6453-6672</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- 資料請求・問合せ -->
+    <div class="form_box">
+      <h1 class="h2">お問い合わせ</h1>
+      <p class="text-center">ご提供いただいた個人情報は当社にて厳重に管理いたします。<br>
+        なお、個人情報を当社より第三者に提供することはございません。 </p>
+      <form class="form-horizontal">
+        <div class="form-group">
+          <label class="col-sm-2 control-label" for="InputSelect"> ご用件<span class="label label-danger">必須</span></label>
+          <div class="col-sm-10">
+            <select class="form-control" id="InputSelect">
+              <option>資料請求（酒仙）</option>
+              <option>資料請求（酒Q）</option>
+              <option>パートナーについて</option>
+              <option>採用について</option>
+              <option>その他</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-2 control-label"> 会社名<span class="label label-danger">必須</span></label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="CompanyName" placeholder="会社名" autocomplete="organization">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-2 control-label"> 担当者名<span class="label label-danger">必須</span></label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="Name" placeholder="担当者名" autocomplete="name">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-2 control-label"> 電話番号<span class="label label-danger">必須</span></label>
+          <div class="col-sm-10">
+            <input type="tel" class="form-control" id="Tel" placeholder="電話番号">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-2 control-label" for="InputEmail">メール・アドレス <span class="label label-danger">必須</span></label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="InputEmail" placeholder="メール・アドレス" autocomplete="email">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-2 control-label"> 郵便番号</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="Post" placeholder="郵便番号" autocomplete="postal-code">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-2 control-label"> 都道府県</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="address-level1" placeholder="都道府県" autocomplete="address-level1">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-2 control-label"> 市区町村</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="address-level2" placeholder="市区町村" autocomplete="address-level2">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-2 control-label"> 番地・マンション名（1行目）</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="address-line1" placeholder="番地・マンション名（1行目）" autocomplete="address-line1">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-2 control-label"> 番地・マンション名（2行目）</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="address-line2" placeholder="番地・マンション名（2行目）" autocomplete="address-line2">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-2 control-label">お問い合わせ内容<span class="label label-danger">必須</span> </label>
+          <div class="col-sm-10">
+            <textarea name="question_text" cols="50" rows="10" class="form-control" placeholder="（全角500文字まで）"></textarea>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-12 text-center">
+            <button type="submit" class="btn btn-send btn-lg">送　信</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- container -->
+<!-- フッター -->
+<div class="flort_ms sp-only">
+  <div class="row row-0">
+    <div class="col-xs-6 bg_seishu"><a href="s_kurauchi.html">清酒・焼酎・他</a></div>
+    <div class="col-xs-6 bg_wine"><a href="p_wine.html">ワイン（果実酒）</a></div>
+    <div class="col-xs-6 bg_beer"><a href="p_beer.html">地ビール</a></div>
+    <div class="col-xs-6 bg_sakeq"><a href="p_ec.html">EC構築</a></div>
+    <div class="col-xs-6 bg_news"><a href="news.html">新着情報</a></div>
+    <div class="col-xs-6 bg_FB"><a href="https://www.facebook.com/TSI-1690253877865115/" target="_blank">FaceBook</a></div>
+  </div>
+</div>
+<div class="footer-menu sp-only">
+  <li><a href="policy.html">情報セキュリティ基本方針</a></li>
+  <li><a href="sitemap.html">サイトマップ</a></li>
+  <li><a href="privacy_policy.html">個人情報保護方針</a></li>
+</div>
+</div>
+<!-- TemplateEndEditable -->
+<footer>
+  <ul class="list-inline text-center">
+    <li><a href="policy.html">情報セキュリティ基本方針</a></li>
+    <li><a href="sitemap.html">サイトマップ</a></li>
+    <li><a href="privacy_policy.html">個人情報保護方針</a></li>
+  </ul>
+  <div class="f_l"> <img src="img/logo.png">
+    <p>Copyright © TSI Co,.Ltd All Rights Reserved</p>
+  </div>
+</footer><!-- フロートメニュー　-->
+<div id="floatMenu" class="pc-only">
+  <ul id="nav2">
+    <li><a class="seishu" href="s_kurauchi.html"><span>清酒・焼酎・他</span></a></li>
+  </ul>
+  <ul id="nav2_w">
+    <li><a class="wine" href="p_wine.html"><span>ワイン（果実酒）</span></a></li>
+  </ul>
+  <ul id="nav2_b">
+    <li><a class="beer" href="p_beer.html"><span>地ビール</span></a></li>
+  </ul>
+  <ul id="nav2_q">
+    <li><a class="sakeq" href="p_ec.html"><span>EC構築</span></a></li>
+  </ul>
+  <ul id="nav2_c_n">
+    <li><a class="contact_n" href="contact.html"><span>お問い合わせ</span></a></li>
+  </ul>
+  <ul id="nav2_n_n">
+    <li><a class="news_n" href="news.html"><span>新着情報</span></a></li>
+  </ul>
+  <ul id="nav2_f">
+    <li class="Facebook_blue"><a class="facebook" href="https://www.facebook.com/TSI-1690253877865115/" target="_blank"><span>FACEBOOK</span></a></li>
+  </ul>
+</div>
+<script src="js/floatMenu.js"></script>
+</body>
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Bootstrap Sample</title>
+<!-- TemplateEndEditable -->
+<!-- BootstrapのCSS読み込み -->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/common.css" rel="stylesheet">
+<link href="../css/index.css" rel="stylesheet">
+<!-- jQuery読み込み -->
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
+<script src="../js/jquery.dimensions.js"></script>
+<script src="../js/wow.js"></script>
+<script>
+new WOW().init();
+</script>
+<!-- BootstrapのJS読み込み -->
+<script src="../js/bootstrap.min.js"></script>
+<!--　nav2 -->
+<script type="text/javascript">
+    var name = "#floatMenu";
+    var menuYloc = null;
+     
+        $(document).ready(function(){
+            menuYloc = parseInt($(name).css("top").substring(0,$(name).css("top").indexOf("px")))
+            $(window).scroll(function () { 
+                offset = menuYloc+$(window).scrollTop()+"px";
+                $(name).animate({top:offset},{duration:900,queue:false});
+            });
+        }); 
+</script>
+<!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+</head>
+<body>
+<!-- TemplateBeginEditable name="ヘッダー" -->
+<header>
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+<img src="../img/logo.png" class="m_r">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#gnavi"> <span class="sr-only">メニュー</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+<div id="gnavi" class="collapse navbar-collapse">
+  <ul class="gnav list-inline pc-only">
+    <li class="current"><a href="#" data-hover="HOME">HOME</a></li>
+    <li><a href="../company.html" data-hover="会社案内">会社案内</a></li>
+    <li><a href="../product.html" data-hover="製品案内">製品案内</a></li>
+    <li><a href="../performance.html" data-hover="導入実績">導入実績</a></li>
+    <li><a href="../partner.html" data-hover="パートナー">パートナー</a></li>
+    <li><a href="../recruit.html" data-hover="採用情報">採用情報</a></li>
+    <li><a href="../contact.html" data-hover="お問い合わせ">お問い合わせ</a></li>
+  </ul>
+  <ul class="gnav sp-only">
+    <p><a href="../index.html" data-hover="HOME">HOME</a></p>
+    <p><a href="../company.html" data-hover="会社案内">会社案内</a></p>
+    <p><a href="../product.html" data-hover="製品案内">製品案内</a></p>
+    <p><a href="../performance.html" data-hover="導入実績">導入実績</a></p>
+    <p><a href="../partner.html" data-hover="パートナー">パートナー</a></p>
+    <p><a href="../recruit.html" data-hover="採用情報">採用情報</a></p>
+    <p><a href="../contact.html" data-hover="お問い合わせ">お問い合わせ</a></p>
+  </ul>
+  </nav>
+  </header>
+  <div class="container">
+    <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+      <!-- Overlay -->
+      <div class="overlay"></div>
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#bs-carousel" data-slide-to="1"></li>
+        <li data-target="#bs-carousel" data-slide-to="2"></li>
+      </ol>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item slides active">
+          <div class="slide-1"></div>
+          <div class="hero">
+            <hgroup>
+              <p>ここにキャッチコピーを入れます</p>
+              <p>説明文A</p>
+            </hgroup>
+            <!--      
+        <button class="btn btn-hero btn-lg" role="button">詳細</button>
+		-->
+          </div>
+        </div>
+        <div class="item slides">
+          <div class="slide-2"></div>
+          <div class="hero">
+            <hgroup>
+              <p>ここにキャッチコピーを入aれます</p>
+              <p>説明文B</p>
+            </hgroup>
+            <!--      
+        <button class="btn btn-hero btn-lg" role="button">詳細</button>
+		-->
+          </div>
+        </div>
+        <div class="item slides">
+          <div class="slide-3"></div>
+          <div class="hero">
+            <hgroup>
+              <p>ここにキャッチコピーを入れます</p>
+              <p>説明文C</p>
+            </hgroup>
+            <!--      
+        <button class="btn btn-hero btn-lg" role="button">詳細</button>
+		-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 新着情報 -->
+    <div class="news">
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="active"> <a href="#news_tab" role="tab" data-toggle="tab"> 新着情報</a> </li>
+        <li><a href="#blog" role="tab" data-toggle="tab"> 企業ブログ</a> </li>
+      </ul>
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div class="tab-pane fade active in" id="news_tab">
+          <h3>新着情報</h3>
+          <table class="table table-hover">
+            <tr>
+              <td class="date">2017年5月1日</td>
+              <td class="news_text"><span class="label label-info">お知らせ</span>ここに新着情報を記載します。</td>
+            </tr>
+            <tr>
+              <td class="date">2017年5月1日</td>
+              <td class="news_text"><span class="label label-info">お知らせ</span>ここに新着情報を記載します。</td>
+            </tr>
+            <tr>
+              <td class="date">2017年5月1日</td>
+              <td class="news_text"><span class="label label-info">お知らせ</span>ここに新着情報を記載します。</td>
+            </tr>
+            <tr>
+              <td class="date">2017年5月1日</td>
+              <td class="news_text"><span class="label label-info">お知らせ</span>ここに新着情報を記載します。</td>
+            </tr>
+            <tr>
+              <td class="date">2017年5月1日</td>
+              <td class="news_text"><span class="label label-info">お知らせ</span>ここに新着情報を記載します。</td>
+            </tr>
+          </table>
+          <a class="btn btn-black btn-lg" href="#" role="button"><span>過去の更新履歴</span></a> </div>
+        <div class="tab-pane fade" id="blog">
+          <h3>企業ブログ</h3>
+          <div class="row row-10">
+            <div class="col-md-3 col-sm-6">
+              <div class="box"> <img src="../img/com_info.png" class="img-responsive">
+                  <p class="date">2017年5月1日</p>
+                <p class="news_text">ブログの記事見出し</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="box"> <img src="../img/com_info.png" class="img-responsive">
+                  <p class="date">2017年5月1日</p>
+                <p class="news_text">ブログの記事見出し</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="box"> <img src="../img/com_info.png" class="img-responsive">
+                  <p class="date">2017年5月1日</p>
+                <p class="news_text">ブログの記事見出し</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="box"> <img src="../img/com_info.png" class="img-responsive">
+                  <p class="date">2017年5月1日</p>
+                <p class="news_text">ブログの記事見出し</p>
+              </div>
+            </div>
+          </div>
+          <a class="btn btn-black btn-lg" href="#" role="button"><span>過去の更新履歴</span></a> </div>
+      </div>
+    </div>
+    <!-- container -->
+    <!-- 会社案内 -->
+    <!-- 
+<div class="jumbotron">
+  <p><span>これは株式会社ティー・エス・アイの会社案内説明文です。</span></p>
+  <p><a class="btn btn-black btn-lg" href="#" role="button"><span>会社案内を見る</span></a></p>
+</div>
+
+<!-- 製品案内　-->
+    <div class="product">
+      <div style="color: #FFF;background-color:#005387;text-align:center;padding:50px 80px;text-align: justify;">
+        <h3>酒仙 i<br>
+            <span>清酒・焼酎・他</span></h3>
+        <p>TSIの事業は、自社で開発したパッケージソフトをコアとした、有益性のあるソリューションサービスの提供を目的とし、<br>
+          酒造業管理システム「酒仙」販売管理、蔵内管理は、<br>
+          “酒造業”という伝統経営に特化し、酒造業特有の複雑な業務を標準化させたシステムです。<br>
+          製造管理から販売実績に至る一連の流れを極めて簡単な操作で実現させ、 最大の効果を発揮させます。</p>
+      </div>
+      <div class="bgimg-2">
+        <div class="caption"> <span class="border" style="opacity: 0.8;font-size:22px;color: #f7f7f7;text-shadow: 2px 2px 8px #000000;">酒税への対応など煩雑になりがちな酒造業の日常業務をシンプルに。 </span>
+            <div class="p_b"><a class="btn btn-black btn-lg" href="#" role="button"><span>詳細はこちら</span></a> </div>
+        </div>
+      </div>
+      <div style="position:relative;">
+        <div style="color:#FFF;background-color:#9e1b32;text-align:center;padding:50px 80px;text-align: justify;">
+          <h3>酒仙 i<br>
+              <span>ワイン</span></h3>
+        </div>
+      </div>
+      <div class="bgimg-3">
+        <div class="caption"> <span class="border" style="opacity: 0.8;font-size:22px;color: #f7f7f7; text-shadow: 2px 2px 8px #000000;">原料から詰口まで、酒造りを強力サポート！ </span>
+            <div class="p_b"><a class="btn btn-black btn-lg" href="#" role="button"><span>詳細はこちら</span></a> </div>
+        </div>
+      </div>
+      <div style="position:relative;">
+        <div style="color:#FFF;background-color:#c4a514;text-align:center;padding:50px 80px;text-align: justify;">
+          <h3>酒仙 i<br>
+              <span>地ビール</span></h3>
+        </div>
+      </div>
+      <div class="bgimg-4">
+        <div class="caption"> <span class="border" style="opacity: 0.8;font-size:22px;color: #f7f7f7; text-shadow: 2px 2px 8px #000000;">酒類製造業務に必要な機能を標準搭載し、地ビール特有の機能を追加。</span>
+            <div class="p_b"><a class="btn btn-black btn-lg" href="#" role="button"><span>詳細はこちら</span></a> </div>
+        </div>
+      </div>
+      <div style="position:relative;">
+        <div style="color:#FFF;background-color:#d26719;text-align:center;padding:50px 80px;text-align: justify;">
+          <h3>ECサイト構築　酒Qi</h3>
+        </div>
+      </div>
+      <div class="bgimg-5">
+        <div class="caption"> <span class="border" style="opacity: 0.8;font-size:22px;color: #f7f7f7; text-shadow: 2px 2px 8px #000000;">ECサイト構築に必要な機能を標準搭載</span>
+            <div class="p_b"><a class="btn btn-black btn-lg" href="#" role="button"><span>詳細はこちら</span></a> </div>
+        </div>
+      </div>
+    </div>
+    <!-- 導入実績 -->
+    <div class="row row-0">
+      <div class="col-md-4">
+        <div class="box">
+          <h3> 導入実績１ </h3>
+          <img src="../img/com_info.png" class="img-responsive">
+          <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="box">
+          <h3> 導入実績２ </h3>
+          <img src="../img/com_info.png" class="img-responsive">
+          <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="box">
+          <h3> 導入実績３ </h3>
+          <img src="../img/com_info.png" class="img-responsive">
+          <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        </div>
+      </div>
+    </div>
+    <!-- フッター -->
+  </div>
+  <div class="flort_ms sp-only">
+    <div class="row row-0">
+      <div class="col-xs-6 bg_seishu"><a href="../p_seishu.html">清酒・焼酎・他</a></div>
+      <div class="col-xs-6 bg_wine"><a href="../p_wine.html">ワイン（果実酒）</a></div>
+      <div class="col-xs-6 bg_beer"><a href="../p_beer.html">地ビール</a></div>
+      <div class="col-xs-6 bg_EC"><a href="../p_ec.html">EC構築</a></div>
+      <div class="col-xs-6 bg_news"><a href="../news.html">新着情報</a></div>
+      <div class="col-xs-6 bg_FB"><a href="https://www.facebook.com/TSI-1690253877865115/" target="_blank">FaceBook</a></div>
+    </div>
+  </div>
+  <div class="footer-menu sp-only">
+    <li><a href="../policy.html">情報セキュリティ基本方針</a></li>
+    <li><a href="../sitemap.html">サイトマップ</a></li>
+    <li><a href="../privacy_policy.html">個人情報保護方針</a></li>
+  </div>
+</div>
+<!-- TemplateEndEditable --><!-- TemplateEndEditable -->
+<footer>
+  <div class="f_l"> <img src="../img/logo.png">
+    <p>Copyright © TSI Co,.Ltd All Rights Reserved</p>
+  </div>
+</footer>
+<!-- フロートメニュー　-->
+<div id="floatMenu" class="pc-only">
+  <ul id="nav2">
+    <li><a class="seishu" href="../p_seishu.html"><span>清酒・焼酎・他</span></a></li>
+  </ul>
+  <ul id="nav2_w">
+    <li><a class="wine" href="../p_wine.html"><span>ワイン（果実酒）</span></a></li>
+  </ul>
+  <ul id="nav2_b">
+    <li><a class="beer" href="../p_beer.html"><span>地ビール</span></a></li>
+  </ul>
+  <ul id="nav2_q">
+    <li><a class="sakeq" href="../p_ec.html"><span>EC構築</span></a></li>
+  </ul>
+  <ul id="nav2_c_n">
+    <li><a class="contact_n" href="../contact.html"><span>お問い合わせ</span></a></li>
+  </ul>
+  <ul id="nav2_n_n">
+    <li><a class="news_n" href="../news.html"><span>新着情報</span></a></li>
+  </ul>
+  <ul id="nav2_f">
+    <li class="Facebook_blue"><a class="facebook" href="https://www.facebook.com/TSI-1690253877865115/" target="_blank"><span>FACEBOOK</span></a></li>
+  </ul>
+</div>
+<script src="../js/floatMenu.js"></script>
+</body>
+</html>

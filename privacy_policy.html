@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap Sample</title>
+<!-- BootstrapのCSS読み込み -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/common.css" rel="stylesheet">
+<link href="css/company.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet">
+<link href="css/hover-min.css" rel="stylesheet">
+<!-- jQuery読み込み -->
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
+<script src="js/jquery.dimensions.js"></script>
+<script src="js/wow.js"></script>
+<script>
+new WOW().init();
+</script>
+<!-- BootstrapのJS読み込み -->
+<script src="js/bootstrap.min.js"></script>
+<!--　nav2 -->
+<script type="text/javascript">
+    var name = "#floatMenu";
+    var menuYloc = null;
+     
+        $(document).ready(function(){
+            menuYloc = parseInt($(name).css("top").substring(0,$(name).css("top").indexOf("px")))
+            $(window).scroll(function () { 
+                offset = menuYloc+$(window).scrollTop()+"px";
+                $(name).animate({top:offset},{duration:900,queue:false});
+            });
+        }); 
+</script>
+</head>
+<body>
+<header>
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+<img src="img/logo.png" class="m_r">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#gnavi"> <span class="sr-only">メニュー</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+<div id="gnavi" class="collapse navbar-collapse">
+  <ul class="gnav list-inline pc-only">
+    <li class="current"><a href="index.html" data-hover="HOME">HOME</a></li>
+    <li><a href="company.html" data-hover="会社案内">会社案内</a></li>
+    <li><a href="product.html" data-hover="製品案内">製品案内</a></li>
+    <li><a href="performance.html" data-hover="導入実績">導入実績</a></li>
+    <li><a href="partner.html" data-hover="パートナー">パートナー</a></li>
+    <li><a href="recruit.html" data-hover="採用情報">採用情報</a></li>
+    <li><a href="contact.html" data-hover="お問い合わせ">お問い合わせ</a></li>
+  </ul>
+  <ul class="gnav sp-only">
+    <p><a href="index.html" data-hover="HOME">HOME</a></p>
+    <p><a href="company.html" data-hover="会社案内">会社案内</a></p>
+    <p><a href="product.html" data-hover="製品案内">製品案内</a></p>
+    <p><a href="performance.html" data-hover="導入実績">導入実績</a></p>
+    <p><a href="partner.html" data-hover="パートナー">パートナー</a></p>
+    <p><a href="recruit.html" data-hover="採用情報">採用情報</a></p>
+    <p><a href="contact.html" data-hover="お問い合わせ">お問い合わせ</a></p>
+  </ul>
+  </nav>
+  </header>
+  <div class="container">
+    <div class="rinen">
+      <h1 class="h2">個人情報保護方針 </h1>
+	  <div class="policy">
+		  <p class="text-left">本ウェブサイトは、株式会社ティー・エス・アイ（以下「当社」）の事業内容等を紹介するサイトです。</p>
+		  <h2>個人情報保護方針</h2>
+		  <p>当社は、以下のとおり個人情報保護方針を定め、個人情報保護を目的として以下の取り組みを実施しております。</p>
+		  <h2>個人情報の管理</h2>
+		  <p>当社は、お客さまの個人情報を正確かつ最新の状態に保ち、個人情報への不正アクセス・紛失・破損・改ざん・漏洩などを防止するため、
+セキュリティシステムの維持・管理体制の整備・社員教育の徹底等の必要な措置を講じ、安全対策を実施し個人情報の厳重な管理を行ないます。</p>
+		  <h2>個人情報の利用目的</h2>
+		  <p>本ウェブサイトでは、お客様からのお問い合わせ時に、お名前、e-mailアドレス、電話番号等の個人情報をご登録いただく場合がございますが、
+これらの個人情報はご提供いただく際の目的以外では利用いたしません。
+お客さまからお預かりした個人情報は、当社からのご連絡や業務のご案内やご質問に対する回答として、電子メールや資料のご送付に利用いたします。</p>
+
+		  <h2>クッキー（Cookie）の使用について</h2>
+		  <p>当社の運営いたしますWebサイトにおきまして、お客さまへのサービス向上の目的でクッキー（Cookie）を使用する場合がありますが、
+お客さまのプライバシーを侵害するものではありません。クッキー（Cookie）を使用するWeb	サイトでは個別にあらかじめ利用目的を明示いたします。
+お使いのブラウザによっては、その設定を変更してクッキーの機能を無効にすることはできますが、その結果Webページ上のサービスの全部または一部が
+ご利用になれなくなることがあります。</p>
+		  <h2>個人情報の第三者への開示・提供の禁止</h2>
+		  <p>当社は、お客さまよりお預かりした個人情報を適切に管理し、次のいずれかに該当する場合を除き、個人情報を第三者に開示いたしません。<br>
+・お客さまの同意がある場合<br>
+・お客さまが希望されるサービスを行なうために当社が業務を委託する業者に対して開示する場合<br>
+・法令に基づき開示することが必要である場合</p>
+		  
+		  <h2>ご本人の照会</h2>
+		  <p>お客さまがご本人の個人情報の照会・修正・削除などをご希望される場合には、ご本人であることを確認の上、対応させていただきます。</p>
+		  
+		  <h2>法令、規範の遵守と見直し</h2>
+		  <p>当社は、保有する個人情報に関して適用される日本の法令、その他規範を遵守するとともに、本ポリシーの内容を適宜見直し、その改善に努めます。</p>
+		  
+		  <h2>免責事項</h2>
+		  <p>本ウェブサイトの情報は、一部のサービスを除き、無料で提供されています。当サイトを利用したウェブサイトの閲覧や情報収集については、
+情報がユー ザーの需要に適合するものか否か、情報の保存や複製その他ユーザーによる任意の利用方法により必要な法的権利を有しているか否か、
+著作権、秘密保持、名誉 毀損、品位保持および輸出に関する法規その他法令上の義務に従うことなど、ユーザーご自身の責任において行っていただきますようお願いいたします。
+当サイトの御利用につき、何らかのトラブルや損失・損害等につきましては一切責任を問わないものとします。
+当サイトが紹介しているウェブサイトやソフトウェアの合法性、正確性、道徳性、最新性、適切性、著作権の許諾や有無など、その内容については一切の保証を致しかねます。
+当サイトからリンクやバナーなどによって他のサイトに移動された場合、移動先サイトで提供される情報、サービス等について一切の責任を負いません。</p>
+
+<h2>著作権</h2>
+		  <p>本ウェブサイトに掲載されている全てのコンテンツは、当社が所有しています。書面による許可なく、個人的な目的以外で使用することは禁止されています。</p>
+		  
+	   </div>
+	   <div class="sign">
+	   	<p>当社の個人情報の取扱に関するお問い合せは下記までご連絡ください。<br>
+株式会社ティー・エス・アイ<br>
+〒920-0345<br>
+石川県金沢市藤江北1丁目566番地<br>
+電話:076-267-7566<br>
+IP電話:050-3785-8485</p>
+	   </div>
+	   
+    </div>
+  </div>
+
+<!-- フッター -->
+<div class="flort_ms sp-only">
+  <div class="row row-0">
+    <div class="col-xs-6 bg_seishu"><a href="s_kurauchi.html">清酒・焼酎・他</a></div>
+    <div class="col-xs-6 bg_wine"><a href="p_wine.html">ワイン（果実酒）</a></div>
+    <div class="col-xs-6 bg_beer"><a href="p_beer.html">地ビール</a></div>
+    <div class="col-xs-6 bg_sakeq"><a href="p_ec.html">EC構築</a></div>
+    <div class="col-xs-6 bg_news"><a href="news.html">新着情報</a></div>
+    <div class="col-xs-6 bg_FB"><a href="https://www.facebook.com/TSI-1690253877865115/" target="_blank">FaceBook</a></div>
+  </div>
+</div>
+<div class="footer-menu sp-only">
+  <li><a href="policy.html">情報セキュリティ基本方針</a></li>
+  <li><a href="sitemap.html">サイトマップ</a></li>
+  <li><a href="privacy_policy.html">個人情報保護方針</a></li>
+</div>
+</div>
+<!-- TemplateEndEditable -->
+<footer>
+  <ul class="list-inline text-center">
+    <li><a href="policy.html">情報セキュリティ基本方針</a></li>
+    <li><a href="sitemap.html">サイトマップ</a></li>
+    <li><a href="privacy_policy.html">個人情報保護方針</a></li>
+  </ul>
+  <div class="f_l"> <img src="img/logo.png">
+    <p>Copyright © TSI Co,.Ltd All Rights Reserved</p>
+  </div>
+</footer>
+<!-- フロートメニュー　-->
+<div id="floatMenu" class="pc-only">
+  <ul id="nav2">
+    <li><a class="seishu" href="s_kurauchi.html"><span>清酒・焼酎・他</span></a></li>
+  </ul>
+  <ul id="nav2_w">
+    <li><a class="wine" href="p_wine.html"><span>ワイン（果実酒）</span></a></li>
+  </ul>
+  <ul id="nav2_b">
+    <li><a class="beer" href="p_beer.html"><span>地ビール</span></a></li>
+  </ul>
+  <ul id="nav2_q">
+    <li><a class="sakeq" href="p_ec.html"><span>EC構築</span></a></li>
+  </ul>
+  <ul id="nav2_c_n">
+    <li><a class="contact_n" href="contact.html"><span>お問い合わせ</span></a></li>
+  </ul>
+  <ul id="nav2_n_n">
+    <li><a class="news_n" href="news.html"><span>新着情報</span></a></li>
+  </ul>
+  <ul id="nav2_f">
+    <li class="Facebook_blue"><a class="facebook" href="https://www.facebook.com/TSI-1690253877865115/" target="_blank"><span>FACEBOOK</span></a></li>
+  </ul>
+</div>
+<script src="js/floatMenu.js"></script>
+</body>
+</html>

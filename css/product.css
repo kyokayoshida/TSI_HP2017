@@ -1,0 +1,417 @@
+@media screen and (min-width: 769px){
+    .product { margin-top: 140px; }    
+}
+@media screen and (max-width: 768px){
+    .product { margin-top: 90px; }    
+}
+
+.product {
+margin-bottom:20px;
+	
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.product h1 {
+	font-weight: 200;
+    letter-spacing: 0.2em;
+	text-align:center;
+	font-family: "Shuei Mincho M","EB Garamond","游明朝",YuMincho,"Hiragino Mincho ProN","HG明朝E","ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+	margin-top:20px;
+}
+
+.seishu_nav h4 {
+	padding-top:30px;
+}
+
+.product p {
+	margin:20px 0px 20px 0px;
+	font-weight: 500;
+    letter-spacing: 0.4em;
+	font-size:small;
+	text-align:center;
+}
+
+.lineup {
+	margin:50px auto;
+	color:#FFFFFF;
+}
+
+.lineup h1 {
+	font-weight: 200;
+    letter-spacing: 0.2em;
+	text-align:center;
+	font-family: "Shuei Mincho M","EB Garamond","游明朝",YuMincho,"Hiragino Mincho ProN","HG明朝E","ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+	margin-top:20px;
+	margin-bottom:50px;
+	color:#000000;
+}
+
+
+.lineup img {
+	display:block;
+	margin:0 auto;
+	padding-right:15px;
+	margin-bottom:10px;
+}
+
+.lineup p {
+	margin-top:10px;
+	font-weight: 500;
+    letter-spacing: 0.4em;
+	font-size:small;
+}
+
+.product_m {
+	vertical-align: middle;
+    margin: 0;
+    text-align: left;
+	color:#FFFFFF;
+    font-size: 22px;
+    font-weight: 500;
+	letter-spacing:0.2em;
+}
+
+.option h1 {
+	font-weight: 200;
+    letter-spacing: 0.2em;
+	text-align:center;
+	font-family: "Shuei Mincho M","EB Garamond","游明朝",YuMincho,"Hiragino Mincho ProN","HG明朝E","ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+	margin-top:20px;
+	margin-bottom:50px;
+	color:#000000;
+}
+
+.option p {
+	margin-top:10px;
+	font-weight: 500;
+    letter-spacing: 0.4em;
+	font-size:small;
+}
+
+.option img {
+	display:block;
+	margin:0 auto;
+	padding-right:15px;
+	margin-bottom:10px;
+}
+
+.product_o {
+	vertical-align: middle;
+    margin: 0;
+    text-align: left;
+    font-size: 22px;
+    font-weight: 500;
+	letter-spacing:0.2em;
+}
+
+.product_o span {
+	vertical-align: middle;
+    text-align: left;
+	font-size:small;
+}
+
+/*　清酒　*/
+.flow {
+	margin:50px auto;
+	text-align:left;
+	font-weight: 500;
+    letter-spacing: 0.4em;
+	font-size:small;
+	padding:50px;
+}
+
+.flow h1{
+	font-weight: 200;
+    letter-spacing: 0.2em;
+	text-align:center;
+	font-family: "Shuei Mincho M","EB Garamond","游明朝",YuMincho,"Hiragino Mincho ProN","HG明朝E","ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+	margin:20px auto;
+}
+.flow img {
+	display:block;
+	margin:0 auto;
+}
+
+.container.flow h2{
+	text-align:center;
+	margin:20px auto;
+}
+
+.seishu_nav {
+	margin: 50px auto;
+	display: block;
+	text-align:center ;
+}
+
+
+.bgg_seishu {
+	/*
+	background-color:#d3e6f2;
+	*/
+	background-image:url(../img/kurauchi_sub.png);
+	padding: 15px;
+	background-position:center top;
+}
+
+.bgg_seishu:before {
+    content: ' ';
+    background-color: rgba(0, 0, 0, .3);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.bgg_wine {
+	/*
+	background-color:#ff9eaf;
+	*/
+	background-image:url(../img/wine_info.png);
+	background-position:center top;
+	padding: 15px;
+}
+
+.bgg_wine:before {
+    content: ' ';
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.bgg_beer {
+	/*
+	background-color:#fff2b7;
+	*/
+	background-image:url(../img/beer_info.png);
+	padding: 15px;
+	background-position:center top;
+}
+
+.bgg_beer:before {
+    content: ' ';
+    background-color: rgba(0, 0, 0, .3);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+
+.bgg_ec {
+	/*
+	background-color:#fec296;
+	*/
+	background-image:url(../img/ec_info.png);
+	padding:15px;
+}
+.bgg_ec:before {
+    content: ' ';
+    background-color: rgba(0, 0, 0, .3);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.bgg_normal {
+	padding: 15px;
+}
+
+
+/* モーダルウィンドウ１*/
+.modal1_contents {
+	background-color: #fff; 
+	width: 80%;
+	margin: 100px auto;
+	padding: 50px 0px;;
+}
+
+.border_radius5 {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+.modal1_contents p {
+	text-align: left;
+	padding: 20px;
+}
+
+.modal1_contents h3 {
+	margin-bottom: 50px;
+}
+
+.special {
+	width: 100%;
+	
+}
+
+.special h1 {
+	font-weight: 200;
+    letter-spacing: 0.2em;
+	text-align:center;
+	font-family: "Shuei Mincho M","EB Garamond","游明朝",YuMincho,"Hiragino Mincho ProN","HG明朝E","ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+	margin-top:40px;
+}
+
+.special p {
+	margin:20px 0px 50px 0px;
+	font-weight: 500;
+    letter-spacing: 0.4em;
+}
+.panel-heading {
+	background-color:#19694b;
+	color:#FFFFFF;
+	text-decoration:none;
+}	
+
+.panel-title {
+	text-align:center;
+	font-size:1.3em;
+}
+
+.panel-accordion a{
+	text-decoration:none;
+}
+
+
+/* テーブル切り替え */
+table {
+  margin:30px auto;
+  width:100%;
+}
+table th, table td {
+  border: 1px solid #524e46;
+  padding: 17px;
+}
+table.light-col th, table.light-col td {
+  border: 1px solid #d6d6d6;
+}
+table th {
+  background-color: #f8f7f7;
+  font-weight: normal;
+
+  text-align:center
+}
+table td {
+  padding-left: 30px;
+}
+table + .table-footer {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+table.light-col tbody tr td input{
+  vertical-align:middle;
+}
+table.light-col tbody tr td label{
+  margin-right:20px;
+}
+.table-header {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.form_box h1{
+	font-weight: 200;
+    letter-spacing: 0.2em;
+    text-align: center;
+    font-family: "Shuei Mincho M", "EB Garamond", 游明朝, YuMincho, "Hiragino Mincho ProN", HG明朝E, "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    margin-top: 40px;
+}
+
+.info {
+	background:url(../img/tel.png) center;
+	background-size:cover;
+	padding:50px;
+}
+
+.info li {
+	margin-right:30px;
+}
+
+.hanbai_bana {
+	background:url(../img/hanbai_bana.png) center;
+	background-size:cover;
+	padding:50px;
+	color:#FFFFFF;
+}
+
+.kurauchi_bana {
+    background: url(../img/kurauchi_bana.png) center;
+    background-size: cover;
+    padding: 50px;
+    color: #FFFFFF;
+}
+
+.kurauchi_sub {
+	background-image:url(../img/kurauchi.png);
+	background-size:cover;
+	padding:50px;
+	color:#FFFFFF;
+}
+
+.kurauchi_sub .h2 span {
+	font-size:0.6em;
+}
+
+.hanbai_sub {
+	background-image:url(../img/hanbai.png);
+	background-size:cover;
+	padding:50px;
+	color:#FFFFFF;
+}
+
+.hanbai_sub .h2 span {
+	font-size:0.6em;
+}
+
+.wine_sub {
+	background-image:url(../img/s_wine_bana.png);
+	background-size:cover;
+	padding:50px;
+	color:#FFFFFF;
+}
+
+.wine_sub .h2 span {
+	font-size:0.6em;
+}
+
+.beer_sub {
+	background-image:url(../img/s_beer_bana.png);
+	background-size:cover;
+	padding:50px;
+	color:#FFFFFF;
+}
+
+.beer_sub .h2 span {
+	font-size:0.6em;
+}
+
+.panel-hanbai {
+    background-color: #0099bd;
+}
+
+.panel-wine {
+    background-color: #9e1b32;
+}
+
+.panel-beer {
+    background-color: #c4a514;
+}
+
+.product_list {
+	margin:20px auto;
+}

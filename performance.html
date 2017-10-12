@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap Sample</title>
+<!-- BootstrapのCSS読み込み -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/common.css" rel="stylesheet">
+<link href="css/company.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet">
+<link href="css/hover-min.css" rel="stylesheet">
+<!-- jQuery読み込み -->
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
+<script src="js/jquery.dimensions.js"></script>
+<script src="js/wow.js"></script>
+<script>
+new WOW().init();
+</script>
+<!-- BootstrapのJS読み込み -->
+<script src="js/bootstrap.min.js"></script>
+<!--　nav2 -->
+<script type="text/javascript">
+    var name = "#floatMenu";
+    var menuYloc = null;
+     
+        $(document).ready(function(){
+            menuYloc = parseInt($(name).css("top").substring(0,$(name).css("top").indexOf("px")))
+            $(window).scroll(function () { 
+                offset = menuYloc+$(window).scrollTop()+"px";
+                $(name).animate({top:offset},{duration:900,queue:false});
+            });
+        }); 
+</script>
+</head>
+<body>
+<header>
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+<img src="img/logo.png" class="m_r">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#gnavi"> <span class="sr-only">メニュー</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+<div id="gnavi" class="collapse navbar-collapse">
+  <ul class="gnav list-inline pc-only">
+    <li class="current"><a href="index.html" data-hover="HOME">HOME</a></li>
+    <li><a href="company.html" data-hover="会社案内">会社案内</a></li>
+    <li><a href="product.html" data-hover="製品案内">製品案内</a></li>
+    <li><a href="performance.html" data-hover="導入実績">導入実績</a></li>
+    <li><a href="partner.html" data-hover="パートナー">パートナー</a></li>
+    <li><a href="recruit.html" data-hover="採用情報">採用情報</a></li>
+    <li><a href="contact.html" data-hover="お問い合わせ">お問い合わせ</a></li>
+  </ul>
+  <ul class="gnav sp-only">
+    <p><a href="index.html" data-hover="HOME">HOME</a></p>
+    <p><a href="company.html" data-hover="会社案内">会社案内</a></p>
+    <p><a href="product.html" data-hover="製品案内">製品案内</a></p>
+    <p><a href="performance.html" data-hover="導入実績">導入実績</a></p>
+    <p><a href="partner.html" data-hover="パートナー">パートナー</a></p>
+    <p><a href="recruit.html" data-hover="採用情報">採用情報</a></p>
+    <p><a href="contact.html" data-hover="お問い合わせ">お問い合わせ</a></p>
+  </ul>
+  </nav>
+  </header>
+  <div class="container">
+    <div class="rinen">
+      <h1 class="h2">導入実績</h1>
+	  <div class="policy">
+		  <p class="text-left">
+		  現在準備中です。
+		  </p>
+	   </div>
+	   
+    </div>
+  </div>
+
+<!-- フッター -->
+<div class="flort_ms sp-only">
+  <div class="row row-0">
+    <div class="col-xs-6 bg_seishu"><a href="s_kurauchi.html">清酒・焼酎・他</a></div>
+    <div class="col-xs-6 bg_wine"><a href="p_wine.html">ワイン（果実酒）</a></div>
+    <div class="col-xs-6 bg_beer"><a href="p_beer.html">地ビール</a></div>
+    <div class="col-xs-6 bg_sakeq"><a href="p_ec.html">EC構築</a></div>
+    <div class="col-xs-6 bg_news"><a href="news.html">新着情報</a></div>
+    <div class="col-xs-6 bg_FB"><a href="https://www.facebook.com/TSI-1690253877865115/" target="_blank">FaceBook</a></div>
+  </div>
+</div>
+<div class="footer-menu sp-only">
+  <li><a href="policy.html">情報セキュリティ基本方針</a></li>
+  <li><a href="sitemap.html">サイトマップ</a></li>
+  <li><a href="privacy_policy.html">個人情報保護方針</a></li>
+</div>
+</div>
+<!-- TemplateEndEditable -->
+<footer>
+  <ul class="list-inline text-center">
+    <li><a href="policy.html">情報セキュリティ基本方針</a></li>
+    <li><a href="sitemap.html">サイトマップ</a></li>
+    <li><a href="privacy_policy.html">個人情報保護方針</a></li>
+  </ul>
+  <div class="f_l"> <img src="img/logo.png">
+    <p>Copyright © TSI Co,.Ltd All Rights Reserved</p>
+  </div>
+</footer>
+<!-- フロートメニュー　-->
+<div id="floatMenu" class="pc-only">
+  <ul id="nav2">
+    <li><a class="seishu" href="s_kurauchi.html"><span>清酒・焼酎・他</span></a></li>
+  </ul>
+  <ul id="nav2_w">
+    <li><a class="wine" href="p_wine.html"><span>ワイン（果実酒）</span></a></li>
+  </ul>
+  <ul id="nav2_b">
+    <li><a class="beer" href="p_beer.html"><span>地ビール</span></a></li>
+  </ul>
+  <ul id="nav2_q">
+    <li><a class="sakeq" href="p_ec.html"><span>EC構築</span></a></li>
+  </ul>
+  <ul id="nav2_c_n">
+    <li><a class="contact_n" href="contact.html"><span>お問い合わせ</span></a></li>
+  </ul>
+  <ul id="nav2_n_n">
+    <li><a class="news_n" href="news.html"><span>新着情報</span></a></li>
+  </ul>
+  <ul id="nav2_f">
+    <li class="Facebook_blue"><a class="facebook" href="https://www.facebook.com/TSI-1690253877865115/" target="_blank"><span>FACEBOOK</span></a></li>
+  </ul>
+</div>
+<script src="js/floatMenu.js"></script>
+</body>
+</html>
