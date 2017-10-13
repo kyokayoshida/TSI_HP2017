@@ -194,3 +194,12 @@ table.brwsr1 th {
     font-family: "Shuei Mincho M", "EB Garamond", 游明朝, YuMincho, "Hiragino Mincho ProN", HG明朝E, "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
     margin-top: 20px;
 }
+
+
+.policy .row img{
+	margin-top:20px;
+}
+
+.policy_2, .policy_3{
+	margin:50px 0;
+}
