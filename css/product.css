@@ -415,3 +415,20 @@ table.light-col tbody tr td label{
 .product_list {
 	margin:20px auto;
 }
+
+.panel-ec {
+    background-color: #d26719;
+    	color:#FFFFFF;
+	text-decoration:none;
+}
+
+.ec_sub {
+	background-image:url(../img/s_beer_bana.png);
+	background-size:cover;
+	padding:50px;
+	color:#FFFFFF;
+}
+
+.ec_sub .h2 span {
+	font-size:0.6em;
+}
