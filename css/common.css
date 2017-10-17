@@ -851,6 +851,22 @@ Image credits: unsplash.com
 /********************************/
 /*       Slides backgrounds     */
 /********************************/
+
+
+.fade-carousel .slides .slide-1, 
+.fade-carousel .slides .slide-2,
+.fade-carousel .slides .slide-3,
+.fade-carousel .slides .slide-4,
+.fade-carousel .slides .slide-5 {
+  height: 500px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+
+/*PC-ONLY*/
+/*
+@media only screen and (min-width: 769px) {
 .fade-carousel .slides .slide-1, 
 .fade-carousel .slides .slide-2,
 .fade-carousel .slides .slide-3,
@@ -861,6 +877,26 @@ Image credits: unsplash.com
   background-position: center center;
   background-repeat: no-repeat;
 }
+  }
+*/
+
+/*SP-only*/
+
+/*
+@media only screen and (max-width: 768px) {
+.fade-carousel .slides .slide-1, 
+.fade-carousel .slides .slide-2,
+.fade-carousel .slides .slide-3,
+.fade-carousel .slides .slide-4,
+.fade-carousel .slides .slide-5 {
+   height: 60vh;
+  background-size: 200% auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+  }
+*/
+
 .fade-carousel .slides .slide-1 {
 	background:url(../img/main/01.png);
 	/*
@@ -881,6 +917,7 @@ Image credits: unsplash.com
    
   	/* 背景画像が読み込まれる前に表示される背景のカラー */
   	/*background-color: #464646;*/
+
 }
 .fade-carousel .slides .slide-2 {
 	background:url(../img/main/02.png);
@@ -902,6 +939,7 @@ Image credits: unsplash.com
    
   	/* 背景画像が読み込まれる前に表示される背景のカラー */
   	/*background-color: #464646;*/
+
 }
 
 .fade-carousel .slides .slide-3 {
@@ -924,6 +962,7 @@ Image credits: unsplash.com
    
   	/* 背景画像が読み込まれる前に表示される背景のカラー */
   	/*background-color: #464646;*/
+
 }
 
 .fade-carousel .slides .slide-4 {
@@ -946,6 +985,7 @@ Image credits: unsplash.com
    
   	/* 背景画像が読み込まれる前に表示される背景のカラー */
   	/*background-color: #464646;*/
+
 }
 
 .fade-carousel .slides .slide-5 {
@@ -968,7 +1008,48 @@ Image credits: unsplash.com
    
   	/* 背景画像が読み込まれる前に表示される背景のカラー */
   	/*background-color: #464646;*/
+
+
+	}
+
+@media only screen and (min-width: 769px) {
+
+
+.fade-carousel .slides .slide-1,
+.fade-carousel .slides .slide-2,
+.fade-carousel .slides .slide-3,
+.fade-carousel .slides .slide-4,
+.fade-carousel .slides .slide-5 {
+  background-size: cover;
 }
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+.fade-carousel .slides .slide-1 {
+  background-size: auto 400px;
+}
+
+.fade-carousel .slides .slide-2 {
+  background-size: auto 400px;
+}
+
+.fade-carousel .slides .slide-3 {
+  background-size: auto 400px;
+}
+
+.fade-carousel .slides .slide-4 {
+  background-size: auto 400px;
+}
+
+
+.fade-carousel .slides .slide-5 {
+  background-size: auto 400px;
+}
+
+  }
 
 
 /********************************/
@@ -980,6 +1061,10 @@ Image credits: unsplash.com
 @media screen and (max-width: 640px){
     .hero h1 { font-size: 4em; }    
 }
+
+
+
+
 
 
 /* フッター　*/
@@ -1123,3 +1208,4 @@ footer {
 .option {
 	margin:20px auto;
 }
+

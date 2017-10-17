@@ -158,6 +158,7 @@ margin-bottom:20px;
 	background-image:url(../img/kurauchi_sub.png);
 	padding: 15px;
 	background-position:center top;
+	background-size:cover;
 }
 
 .bgg_seishu:before {
@@ -176,6 +177,7 @@ margin-bottom:20px;
 	*/
 	background-image:url(../img/wine_info.png);
 	background-position:center top;
+	background-size:cover;
 	padding: 15px;
 }
 
@@ -196,6 +198,7 @@ margin-bottom:20px;
 	background-image:url(../img/beer_info.png);
 	padding: 15px;
 	background-position:center top;
+	background-size:cover;
 }
 
 .bgg_beer:before {
@@ -215,6 +218,8 @@ margin-bottom:20px;
 	*/
 	background-image:url(../img/ec_info.png);
 	padding:15px;
+	background-position:center top;
+	background-size:cover;
 }
 .bgg_ec:before {
     content: ' ';
@@ -228,6 +233,16 @@ margin-bottom:20px;
 
 .bgg_normal {
 	padding: 15px;
+}
+
+@media screen and (max-width: 991px){
+
+      .lineup .btn{margin-right:auto;}
+
+}
+@media screen and (min-width: 992px){
+    .lineup  .btn{ margin-right:20%; } 
+
 }
 
 
@@ -345,6 +360,7 @@ table.light-col tbody tr td label{
 .hanbai_bana {
 	background:url(../img/hanbai_bana.png) center;
 	background-size:cover;
+	background-position: center center;
 	padding:50px;
 	color:#FFFFFF;
 }
@@ -352,6 +368,7 @@ table.light-col tbody tr td label{
 .kurauchi_bana {
     background: url(../img/kurauchi_bana.png) center;
     background-size: cover;
+    background-position: center center;
     padding: 50px;
     color: #FFFFFF;
 }
@@ -359,6 +376,7 @@ table.light-col tbody tr td label{
 .kurauchi_sub {
 	background-image:url(../img/kurauchi.png);
 	background-size:cover;
+	background-position: center center;
 	padding:50px;
 	color:#FFFFFF;
 }
@@ -370,6 +388,7 @@ table.light-col tbody tr td label{
 .hanbai_sub {
 	background-image:url(../img/hanbai.png);
 	background-size:cover;
+	background-position: center center;
 	padding:50px;
 	color:#FFFFFF;
 }
@@ -381,6 +400,7 @@ table.light-col tbody tr td label{
 .wine_sub {
 	background-image:url(../img/s_wine_bana.png);
 	background-size:cover;
+	background-position: center center;
 	padding:50px;
 	color:#FFFFFF;
 }
@@ -392,6 +412,7 @@ table.light-col tbody tr td label{
 .beer_sub {
 	background-image:url(../img/s_beer_bana.png);
 	background-size:cover;
+	background-position: center center;
 	padding:50px;
 	color:#FFFFFF;
 }
@@ -425,6 +446,7 @@ table.light-col tbody tr td label{
 .ec_sub {
 	background-image:url(../img/ec_info.png);
 	background-size:cover;
+	background-position: center center;
 	padding:50px;
 	color:#000;
 }
@@ -436,7 +458,6 @@ table.light-col tbody tr td label{
 	margin-left:auto;
 	margin-right:auto;
 
-
 }
 .ec_sub .h2 span {
 	font-size:0.6em;
@@ -445,4 +466,12 @@ table.light-col tbody tr td label{
 .ec_renkei img{
 	margin-top:10px;
 	margin-bottom:25px;
+}
+
+.panel-account{
+background:#ccc;
+padding-top:10px;
+padding-bottom:10px;
+text-align:center;
+text-decoration:none;
 }

@@ -92,7 +92,8 @@ text-align:center;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:cover;
+
 
 }
 
@@ -114,6 +115,7 @@ background-image:url(../img/seishu_info.png);
 .bgimg-5 {
   background-image:url(../img/ec_info.png);
   min-height: 400px;
+
 }
 
 .caption {
