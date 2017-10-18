@@ -1,0 +1,54 @@
+@media screen and (min-width: 769px){
+    .sitemap { margin:175px 100px 80px 100px; }    
+}
+@media screen and (max-width: 768px){
+    .sitemap { 	margin:125px 30px 50px 30px; }    
+}
+
+.sitemap .s-contents{
+	margin-top:30px;
+}
+.sitemap a{
+	color:#000000;
+}
+.sitemap a:hover{
+	color:#666;
+	border-bottom:3px solid #305097;
+	text-decoration:none;
+}
+
+.sitemap h1 {
+	font-weight: 200;
+        letter-spacing: 0.2em;
+	text-align:center;
+	font-family: "Shuei Mincho M","EB Garamond","游明朝",YuMincho,"Hiragino Mincho ProN","HG明朝E","ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+	margin-top:20px;
+}
+
+.sitemap h4::before{
+	content:'';
+	display:inline-block;
+	width:8px;
+	height:8px;
+	background:#11346d;
+	margin-right:8px;
+	vertical-align:4px;
+	
+}
+
+.sitemap p {
+	margin:20px 0px 20px 10px;
+	font-weight: 500;
+	line-height:1.5;
+	letter-spacing: 0.3em;
+	font-size:small;
+	font-family:'Lucida Grande', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif;
+}
+.sitemap ul{
+	font-family:'Lucida Grande', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif;
+	font-size:16px;
+}
+
+.sitemap li{
+	padding-bottom:2px;
+}

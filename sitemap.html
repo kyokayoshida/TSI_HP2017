@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap Sample</title>
+<!-- BootstrapのCSS読み込み -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/common.css" rel="stylesheet">
+<link href="css/sitemap.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet">
+<link href="css/hover-min.css" rel="stylesheet">
+<!-- jQuery読み込み -->
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
+<script src="js/jquery.dimensions.js"></script>
+<script src="js/wow.js"></script>
+<script>
+new WOW().init();
+</script>
+<!-- BootstrapのJS読み込み -->
+<script src="js/bootstrap.min.js"></script>
+<!--　nav2 -->
+<script type="text/javascript">
+    var name = "#floatMenu";
+    var menuYloc = null;
+     
+        $(document).ready(function(){
+            menuYloc = parseInt($(name).css("top").substring(0,$(name).css("top").indexOf("px")))
+            $(window).scroll(function () { 
+                offset = menuYloc+$(window).scrollTop()+"px";
+                $(name).animate({top:offset},{duration:900,queue:false});
+            });
+        }); 
+</script>
+</head>
+<body>
+<header>
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+<img src="img/logo.png" class="m_r">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#gnavi"> <span class="sr-only">メニュー</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+<div id="gnavi" class="collapse navbar-collapse">
+  <ul class="gnav list-inline pc-only">
+    <li class="current"><a href="index.html" data-hover="HOME">HOME</a></li>
+    <li><a href="company.html" data-hover="会社案内">会社案内</a></li>
+    <li><a href="product.html" data-hover="製品案内">製品案内</a></li>
+    <li><a href="performance.html" data-hover="導入実績">導入実績</a></li>
+    <li><a href="partner.html" data-hover="パートナー">パートナー</a></li>
+    <li><a href="recruit.html" data-hover="採用情報">採用情報</a></li>
+    <li><a href="contact.html" data-hover="お問い合わせ">お問い合わせ</a></li>
+  </ul>
+  <ul class="gnav sp-only">
+    <p><a href="index.html" data-hover="HOME">HOME</a></p>
+    <p><a href="company.html" data-hover="会社案内">会社案内</a></p>
+    <p><a href="product.html" data-hover="製品案内">製品案内</a></p>
+    <p><a href="performance.html" data-hover="導入実績">導入実績</a></p>
+    <p><a href="partner.html" data-hover="パートナー">パートナー</a></p>
+    <p><a href="recruit.html" data-hover="採用情報">採用情報</a></p>
+    <p><a href="contact.html" data-hover="お問い合わせ">お問い合わせ</a></p>
+  </ul>
+  </nav>
+  </header>
+  <div class="container">
+    <div class="sitemap">
+      <h1 class="h2">サイトマップ<br>
+
+    <div class="s-contents text-left">
+	<h4><a href="index.html">ＨＯＭＥ</a></h4>
+	 <p>株式会社ティー・エス・アイ WEBサイトのトップページです。 </p>
+
+	<h4><a href="company.html">会社案内</a></h4>
+	 <p>ティー・エス・アイの会社案内ページです。<br>社長挨拶、企業理念、情報セキュリティ基本方針、概要、沿革を記載しております。 </p>
+	
+	<h4><a href="product.html">製品案内</a></h4>
+	 <p>ティー・エス・アイの製品の案内ページです。 </p>
+	 <ul>
+	   <li><a href="s_hanbai.html">酒仙i 販売管理</a><p>酒造業向け管理システム「酒仙」販売管理の案内ページです。<br>
+	   		酒税制度への対応、在庫・販売・受発注の管理などの問題を解決し、酒造業特有の煩雑な日常業務を効率化させます。</p></li>
+	   <li><a href="s_kurauchi.html">酒仙i 蔵内管理</a><p>酒造業向け管理システム「酒仙」蔵内管理の案内ページです。<br>
+	   		原価算出やもろみ管理、トレーサビリティ機能、生産計画シミュレーションなど洗練された機能を搭載。ストレスを感じさせない操作性で、お客様の酒造りを強力にサポートします。 </p></li>
+	   <li><a href="p_wine.html">酒仙i ワイン管理</a><p>酒造業向け管理システム「酒仙」ワイン管理の案内ページです。</p></li>
+	   <li><a href="p_beer.html">酒仙i 地ビール管理</a><p>酒造業向け管理システム「酒仙」地ビール管理の案内ページです。</p></li>
+	   <li><a href="p_ec.html">酒Ｑi</a><p>酒造業向けECサイト構築システム「酒Qi」の案内ページです。<br>
+	   		これまでに培ってきた酒造業界のノウハウを元に販路の拡大を最大限支援いたします。お客様のEC事業をトータルサポートする豊富な機能が標準搭載。 </p></li>
+	 </ul>
+	
+	<h4><a href="performance.html">導入実績</a></h4>
+	 <p>ティー・エス・アイの製品導入実績の紹介ページです。</p>
+	
+	<h4><a href="partner.html">パートナー</a></h4>
+	 <p>ティー・エス・アイ代理店制度の案内ページです。<br>
+	 弊社の販売方針に賛同して頂けるパートナー様を募集しております。 </p>
+
+	<h4><a href="recruit.html">採用情報</a></h4>
+	 <p>ティー・エス・アイ採用情報の案内ページです。<br>
+	 企業概要、人材教育、社長からのメッセージ、新卒・中途採用に関して記載しております。 </p>
+	
+	<h4><a href="contact.html">お問い合せ</a></h4>
+	 <p>ティー・エス・アイのお問い合わせページです。<br>
+	 資料請求・お問い合わせ、またご不明な点がございましたらこちらよりお問い合わせください。</p>
+	
+	<h4><a href="news.html">新着情報</a></h4>
+	 <p>ティー・エス・アイの新着情報ページです。<br>
+	 システムに関わるニュースや、酒造業界に関わるニュースをお届けいたします。</p>
+	
+	<h4><a href="policy.html">情報セキュリティ基本方針</h4>
+	 <p></p>
+	
+	<h4><a href="#">サイトマップ</a></h4>
+	 <p></p>
+	
+	<h4><a href="privacy_policy.html">個人情報保護方針</a></h4>
+	 <p></p>
+    </div>
+	   
+    </div>
+  </div>
+
+
+<!-- フッター -->
+<div class="flort_ms sp-only">
+  <div class="row row-0">
+    <div class="col-xs-6 bg_seishu"><a href="s_kurauchi.html">清酒・焼酎・他</a></div>
+    <div class="col-xs-6 bg_wine"><a href="p_wine.html">ワイン（果実酒）</a></div>
+    <div class="col-xs-6 bg_beer"><a href="p_beer.html">地ビール</a></div>
+    <div class="col-xs-6 bg_sakeq"><a href="p_ec.html">EC構築</a></div>
+    <div class="col-xs-6 bg_news"><a href="news.html">新着情報</a></div>
+    <div class="col-xs-6 bg_FB"><a href="https://www.facebook.com/TSI-1690253877865115/" target="_blank">FaceBook</a></div>
+  </div>
+</div>
+<div class="footer-menu sp-only">
+  <li><a href="policy.html">情報セキュリティ基本方針</a></li>
+  <li><a href="sitemap.html">サイトマップ</a></li>
+  <li><a href="privacy_policy.html">個人情報保護方針</a></li>
+</div>
+</div>
+<!-- TemplateEndEditable -->
+<footer>
+  <ul class="list-inline text-center">
+    <li><a href="policy.html">情報セキュリティ基本方針</a></li>
+    <li><a href="sitemap.html">サイトマップ</a></li>
+    <li><a href="privacy_policy.html">個人情報保護方針</a></li>
+  </ul>
+  <div class="f_l"> <img src="img/logo.png">
+    <p>Copyright c TSI Co,.Ltd All Rights Reserved</p>
+  </div>
+</footer><!-- フロートメニュー　-->
+<div id="floatMenu" class="pc-only">
+  <ul id="nav2">
+    <li><a class="seishu" href="s_kurauchi.html"><span>清酒・焼酎・他</span></a></li>
+  </ul>
+  <ul id="nav2_w">
+    <li><a class="wine" href="p_wine.html"><span>ワイン（果実酒）</span></a></li>
+  </ul>
+  <ul id="nav2_b">
+    <li><a class="beer" href="p_beer.html"><span>地ビール</span></a></li>
+  </ul>
+  <ul id="nav2_q">
+    <li><a class="sakeq" href="p_ec.html"><span>EC構築</span></a></li>
+  </ul>
+  <ul id="nav2_c_n">
+    <li><a class="contact_n" href="contact.html"><span>お問い合わせ</span></a></li>
+  </ul>
+  <ul id="nav2_n_n">
+    <li><a class="news_n" href="news.html"><span>新着情報</span></a></li>
+  </ul>
+  <ul id="nav2_f">
+    <li class="Facebook_blue"><a class="facebook" href="https://www.facebook.com/TSI-1690253877865115/" target="_blank"><span>FACEBOOK</span></a></li>
+  </ul>
+</div>
+<script src="js/floatMenu.js"></script>
+</body>
+</html>
