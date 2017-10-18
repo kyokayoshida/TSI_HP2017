@@ -812,8 +812,15 @@ Image credits: unsplash.com
     letter-spacing: 0.02em; 
     margin: 0;
     padding: 0;
-	font-size: 1.8em;
+font-size: 1.8em;
 }
+@media only screen and (max-width: 768px) {
+.hero p {
+
+font-size: 1.4em;
+}
+}
+
 
 .fade-carousel .carousel-inner .item .hero {
     opacity: 0;
@@ -858,12 +865,21 @@ Image credits: unsplash.com
 .fade-carousel .slides .slide-3,
 .fade-carousel .slides .slide-4,
 .fade-carousel .slides .slide-5 {
-  height: 500px;
+  margin-top:20px;
+  height: 400px;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
-
+@media only screen and (max-width: 768px) {
+	.fade-carousel .slides .slide-1, 
+.fade-carousel .slides .slide-2,
+.fade-carousel .slides .slide-3,
+.fade-carousel .slides .slide-4,
+.fade-carousel .slides .slide-5 {
+  margin-top:5px;
+}
+}
 /*PC-ONLY*/
 /*
 @media only screen and (min-width: 769px) {
@@ -1029,24 +1045,24 @@ Image credits: unsplash.com
 
 @media only screen and (max-width: 768px) {
 .fade-carousel .slides .slide-1 {
-  background-size: auto 400px;
+  background-size: auto 300px;
 }
 
 .fade-carousel .slides .slide-2 {
-  background-size: auto 400px;
+  background-size: auto 300px;
 }
 
 .fade-carousel .slides .slide-3 {
-  background-size: auto 400px;
+  background-size: auto 300px;
 }
 
 .fade-carousel .slides .slide-4 {
-  background-size: auto 400px;
+  background-size: auto 300px;
 }
 
 
 .fade-carousel .slides .slide-5 {
-  background-size: auto 400px;
+  background-size: auto 300px;
 }
 
   }
